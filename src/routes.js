@@ -5,7 +5,7 @@ import Dashboard from "views/Dashboard.js";
 import LoginCliente from "views/Pages/LoginCliente.js";
 import LoginEmpresa from "views/Pages/LoginEmpresa.js";
 import LoginGerencia from "views/Pages/LoginGerencia.js";
-import RegisterPage from "views/Pages/RegisterPage.js";
+import CambioClave from "views/Pages/CambioClave.js";
 import LockScreenPage from "views/Pages/LockScreenPage.js";
 
 var routes = [
@@ -36,6 +36,13 @@ var routes = [
     name: "Login Empresa",
     icon: "nc-icon nc-chart-pie-35",
     component: LoginEmpresa,
+  },
+  {
+    path: "/cambio-clave",
+    layout: "/auth",
+    name: "Cambio Contraseña",
+    icon: "nc-icon nc-chart-pie-35",
+    component: CambioClave,
   },
 ];
 export default routes;

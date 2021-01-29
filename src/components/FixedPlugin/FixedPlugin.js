@@ -24,7 +24,7 @@ function FixedPlugin({
   const [imageSwitch, setImageSwitch] = React.useState(true);
   const [sidebarSwitch, setSidebarSwitch] = React.useState(false);
   const [navbarSwitch, setNavbarSwitch] = React.useState(false);
-  const [sidebarImage, setSidebarImage] = React.useState(sidebarDefaultImage);
+  const [sidebarImage, setSidebarImage] = React.useState("assets/img/Arbol.jpg");
   return (
     <>
       <div className="fixed-plugin">
@@ -33,9 +33,9 @@ function FixedPlugin({
             <i className="fas fa-cogs fa-2x"></i>
           </Dropdown.Toggle>
           <Dropdown.Menu>
-            <li className="header-title">Sidebar Style</li>
+            <li className="header-title">Estilo Barra Lateral</li>
             <li className="adjustments-line d-flex align-items-center">
-              <p className="pt-0 mr-auto">Background Image</p>
+              <p className="pt-0 mr-auto">Imágen</p>
               <Form.Check
                 type="switch"
                 id="custom-switch-1-image"
@@ -49,7 +49,7 @@ function FixedPlugin({
               />
             </li>
             <li className="adjustments-line d-flex align-items-center">
-              <p className="pt-0 mr-auto">Sidebar Mini</p>
+              <p className="pt-0 mr-auto">Lateral Minimizada</p>
               <Form.Check
                 type="switch"
                 id="custom-switch-2-sidebarSwitch"
@@ -63,7 +63,7 @@ function FixedPlugin({
               />
             </li>
             <li className="adjustments-line d-flex align-items-center">
-              <p className="pt-0 mr-auto">Fixed Navbar</p>
+              <p className="pt-0 mr-auto">Navegación Fija</p>
               <Form.Check
                 type="switch"
                 id="custom-switch-3-navbar"
@@ -80,7 +80,7 @@ function FixedPlugin({
               />
             </li>
             <li className="adjustments-line d-flex align-items-center">
-              <p className="pt-0 mr-auto">Filters</p>
+              <p className="pt-0 mr-auto"> </p>
               <div>
                 {backgroundColors.map((prop, key) => (
                   <Badge
@@ -92,7 +92,7 @@ function FixedPlugin({
                 ))}
               </div>
             </li>
-            <li className="header-title">Sidebar Images</li>
+            <li className="header-title">Imágenes</li>
             {sidebarImages.map((prop, key) => (
               <li
                 key={key}
@@ -106,54 +106,6 @@ function FixedPlugin({
                 </a>
               </li>
             ))}
-            <li className="button-container">
-              <div>
-                <Button
-                  block
-                  href="http://www.creative-tim.com/product/light-bootstrap-dashboard-react?ref=lbpr-fp"
-                  target="_blank"
-                  variant="info"
-                >
-                  Get free demo!
-                </Button>
-              </div>
-            </li>
-            <li className="button-container">
-              <div>
-                <Button
-                  block
-                  className="btn-fill"
-                  href="http://www.creative-tim.com/product/light-bootstrap-dashboard-pro-react?ref=lbpr-fp"
-                  target="_blank"
-                  variant="warning"
-                >
-                  Buy now!
-                </Button>
-              </div>
-            </li>
-            <li className="button-container">
-              <div>
-                <Button
-                  block
-                  href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro-react/#/documentation/tutorial?ref=lbpr-fp"
-                  target="_blank"
-                  variant="danger"
-                >
-                  Documentation
-                </Button>
-              </div>
-            </li>
-            <li className="header-title" id="sharrreTitle">
-              Thank you for sharing!
-            </li>
-            <li className="button-container d-flex justify-content-center">
-              <Button className="mr-2" id="twitter" variant="twitter">
-                <i className="fab fa-twitter"></i>
-              </Button>
-              <Button id="facebook" variant="facebook">
-                <i className="fab fa-facebook-square"></i>
-              </Button>
-            </li>
           </Dropdown.Menu>
         </Dropdown>
       </div>

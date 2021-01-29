@@ -1,18 +1,23 @@
+// Componente: CambioClave.js
+// Autor: Reinaldo Vicini
+// Fecha: 2021/01/29
+// Descripcion: Módulo que cambia la clave. Digita la nueva y si coinciden envia la petición al servidor para su cambio 
+// Parametros:  
+//
+ 
+
 import React from "react";
 
 // react-bootstrap components
 import {
-  Badge,
   Button,
   Card,
   Form,
-  Navbar,
-  Nav,
   Container,
   Col,
 } from "react-bootstrap";
 
-function LoginCliente() {
+function CambioClave() {
   const [cardClasses, setCardClasses] = React.useState("card-hidden");
   React.useEffect(() => {
     setTimeout(function () {
@@ -32,35 +37,23 @@ function LoginCliente() {
               <Form action="" className="form" method="">
                 <Card className={"card-login " + cardClasses}>
                   <Card.Header>
-                    <h3 className="header text-center">Bienvenido!</h3>
+                    <h3 className="header text-center">Cambio Contraseña</h3>
                   </Card.Header>
                   <Card.Body>
-                    <Card.Body>
                       <Form.Group>
-                        <label>Cédula Identidad</label>
+                        <label>Nueva Contraseña</label>
                         <Form.Control
-                          placeholder="Su cédula"
+                          placeholder="Su nueva contraseña"
                           type="text"
                         ></Form.Control>
                       </Form.Group>
                       <Form.Group>
-                        <label>Contraseña</label>
+                        <label>Confirme nueva contraseña</label>
                         <Form.Control
-                          placeholder="Su contraseña"
+                          placeholder="Su nueva contraseña"
                           type="password"
                         ></Form.Control>
                       </Form.Group>
-                      <Form.Check className="pl-0">
-                        <Form.Check.Label>
-                          <Form.Check.Input
-                            defaultChecked
-                            type="checkbox"
-                          ></Form.Check.Input>
-                          <span className="form-check-sign"></span>
-                          Suscribase a nuestro Boletin Informativo
-                        </Form.Check.Label>
-                      </Form.Check>
-                    </Card.Body>
                   </Card.Body>
                   <Card.Footer className="ml-auto mr-auto">
                     <Button className="btn-wd" type="submit" variant="warning">
@@ -86,4 +79,4 @@ function LoginCliente() {
   );
 }
 
-export default LoginCliente;
+export default CambioClave;
