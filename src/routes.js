@@ -1,6 +1,6 @@
 // Nombre: routes
 
-*/
+
 import Dashboard from "views/Dashboard.js";
 import LoginCliente from "views/Pages/LoginCliente.js";
 import LoginEmpresa from "views/Pages/LoginEmpresa.js";
