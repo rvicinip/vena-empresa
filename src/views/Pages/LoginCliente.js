@@ -12,7 +12,7 @@ import {
   Col,
 } from "react-bootstrap";
 
-function LoginPage() {
+function LoginCliente() {
   const [cardClasses, setCardClasses] = React.useState("card-hidden");
   React.useEffect(() => {
     setTimeout(function () {
@@ -32,21 +32,21 @@ function LoginPage() {
               <Form action="" className="form" method="">
                 <Card className={"card-login " + cardClasses}>
                   <Card.Header>
-                    <h3 className="header text-center">Login</h3>
+                    <h3 className="header text-center">Bienvenido!</h3>
                   </Card.Header>
                   <Card.Body>
                     <Card.Body>
                       <Form.Group>
-                        <label>Email address</label>
+                        <label>Cédula Identidad</label>
                         <Form.Control
-                          placeholder="Enter email"
-                          type="email"
+                          placeholder="Su cédula"
+                          type="text"
                         ></Form.Control>
                       </Form.Group>
                       <Form.Group>
-                        <label>Password</label>
+                        <label>Contraseña</label>
                         <Form.Control
-                          placeholder="Password"
+                          placeholder="Su contraseña"
                           type="password"
                         ></Form.Control>
                       </Form.Group>
@@ -57,14 +57,14 @@ function LoginPage() {
                             type="checkbox"
                           ></Form.Check.Input>
                           <span className="form-check-sign"></span>
-                          Subscribe to newsletter
+                          Suscribase a nuestro Boletin Informativo
                         </Form.Check.Label>
                       </Form.Check>
                     </Card.Body>
                   </Card.Body>
                   <Card.Footer className="ml-auto mr-auto">
                     <Button className="btn-wd" type="submit" variant="warning">
-                      Login
+                      Continuar
                     </Button>
                   </Card.Footer>
                 </Card>
@@ -86,4 +86,4 @@ function LoginPage() {
   );
 }
 
-export default LoginPage;
+export default LoginCliente;
