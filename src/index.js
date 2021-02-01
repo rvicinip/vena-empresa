@@ -26,7 +26,7 @@ import { components } from "react-select";
 
 ReactDOM.render(
   <BrowserRouter>
-    <CapturaTiempos />
+    <Inicio />
   </BrowserRouter>,
   document.getElementById("root")
 );

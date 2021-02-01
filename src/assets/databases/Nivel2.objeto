@@ -1,0 +1,202 @@
+[
+        {
+            nombreNivel2: "Planeación estrategica",
+            idNivel1: "001",
+            idNivel2: "001001"
+        },
+        {
+            nombreNivel2: "Gobierno corporativo",
+            idNivel1: "001",
+            idNivel2: "001002"
+        },
+        {
+            nombreNivel2: "Gestión del Presupuesto",
+            idNivel1: "001",
+            idNivel2: "001003"
+        },
+        {
+            nombreNivel2: "Gestión del riesgo",
+            idNivel1: "002",
+            idNivel2: "002001"
+        },
+        {
+            nombreNivel2: "Sistema de gestión de calidad",
+            idNivel1: "002",
+            idNivel2: "002002"
+        },
+        {
+            nombreNivel2: "Auditoria y Control Integral",
+            idNivel1: "002",
+            idNivel2: "002003"
+        },
+        {
+            nombreNivel2: "Gestión del Asociado",
+            idNivel1: "003",
+            idNivel2: "003001"
+        },
+        {
+            nombreNivel2: "Gestionar Ahorro",
+            idNivel1: "004",
+            idNivel2: "004001"
+        },
+        {
+            nombreNivel2: "Gestionar Credito",
+            idNivel1: "004",
+            idNivel2: "004002"
+        },
+        {
+            nombreNivel2: "Seguros",
+            idNivel1: "004",
+            idNivel2: "004003"
+        },
+        {
+            nombreNivel2: "Cartera",
+            idNivel1: "004",
+            idNivel2: "004004"
+        },
+        {
+            nombreNivel2: "Gestionar Garantías",
+            idNivel1: "004",
+            idNivel2: "004005"
+        },
+        {
+            nombreNivel2: "Gestión Social ",
+            idNivel1: "005",
+            idNivel2: "005001"
+        },
+        {
+            nombreNivel2: "Gestionar Educación",
+            idNivel1: "005",
+            idNivel2: "005002"
+        },
+        {
+            nombreNivel2: "Gestionar emprendimiento",
+            idNivel1: "005",
+            idNivel2: "005003"
+        },
+        {
+            nombreNivel2: "Gestionar Beneficios",
+            idNivel1: "005",
+            idNivel2: "005004"
+        },
+        {
+            nombreNivel2: "Arquitectura organizacional",
+            idNivel1: "006",
+            idNivel2: "006001"
+        },
+        {
+            nombreNivel2: "Atracción del talento",
+            idNivel1: "006",
+            idNivel2: "006002"
+        },
+        {
+            nombreNivel2: "Bienestar laboral",
+            idNivel1: "006",
+            idNivel2: "006003"
+        },
+        {
+            nombreNivel2: "Desarrollo Humano",
+            idNivel1: "006",
+            idNivel2: "006004"
+        },
+        {
+            nombreNivel2: "Relaciones laborales",
+            idNivel1: "006",
+            idNivel2: "006005"
+        },
+        {
+            nombreNivel2: "Compensación ",
+            idNivel1: "006",
+            idNivel2: "006006"
+        },
+        {
+            nombreNivel2: "Gestión de compras",
+            idNivel1: "007",
+            idNivel2: "007001"
+        },
+        {
+            nombreNivel2: "Gestión documental",
+            idNivel1: "007",
+            idNivel2: "007002"
+        },
+        {
+            nombreNivel2: "Logistica Interna",
+            idNivel1: "007",
+            idNivel2: "007003"
+        },
+        {
+            nombreNivel2: "Mantenimiento de Activos e Infraestructura",
+            idNivel1: "007",
+            idNivel2: "007004"
+        },
+        {
+            nombreNivel2: "Funciones Generales",
+            idNivel1: "007",
+            idNivel2: "007005"
+        },
+        {
+            nombreNivel2: "Requerimientos Jurídicos",
+            idNivel1: "008",
+            idNivel2: "008001"
+        },
+        {
+            nombreNivel2: "Gestión Jurídica Externa ",
+            idNivel1: "008",
+            idNivel2: "008002"
+        },
+        {
+            nombreNivel2: "Procesos Democráticos ",
+            idNivel1: "008",
+            idNivel2: "008003"
+        },
+        {
+            nombreNivel2: "Contabilidad",
+            idNivel1: "009",
+            idNivel2: "009001"
+        },
+        {
+            nombreNivel2: "Gestión Tributaria",
+            idNivel1: "009",
+            idNivel2: "009002"
+        },
+        {
+            nombreNivel2: "Financiera",
+            idNivel1: "009",
+            idNivel2: "009003"
+        },
+        {
+            nombreNivel2: "Tesorería",
+            idNivel1: "009",
+            idNivel2: "009004"
+        },
+        {
+            nombreNivel2: "Gestionar mercadeo",
+            idNivel1: "010",
+            idNivel2: "010001"
+        },
+        {
+            nombreNivel2: "Gestionar base de datos",
+            idNivel1: "010",
+            idNivel2: "010002"
+        },
+        {
+            nombreNivel2: "Gestionar comunicaciones",
+            idNivel1: "010",
+            idNivel2: "010003"
+        },
+        {
+            nombreNivel2: "PETI (Planeación Estrategica de TI)",
+            idNivel1: "011",
+            idNivel2: "011001"
+        },
+        {
+            nombreNivel2: "Administración y Gestión de TI",
+            idNivel1: "011",
+            idNivel2: "011002"
+        },
+        {
+            nombreNivel2: "Control y Garantia de TI",
+            idNivel1: "011",
+            idNivel2: "011003"
+        }
+    ]
