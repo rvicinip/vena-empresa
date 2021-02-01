@@ -6,7 +6,8 @@ import LoginCliente from "views/Pages/LoginCliente.js";
 import LoginEmpresa from "views/Pages/LoginEmpresa.js";
 import LoginGerencia from "views/Pages/LoginGerencia.js";
 import CambioClave from "views/Pages/CambioClave.js";
-import LockScreenPage from "views/Pages/LockScreenPage.js";
+import Personal from "components/Personal.js";
+import { CapturaTiempos } from "components/CapturaTiempos.js";
 
 var routes = [
   {
@@ -40,9 +41,23 @@ var routes = [
   {
     path: "/cambio-clave",
     layout: "/auth",
-    name: "Cambio Contraseña",
+    name: "Cambio Contraseñas",
     icon: "nc-icon nc-chart-pie-35",
     component: CambioClave,
+  },
+  {
+    path: "/tabla-personal",
+    layout: "/admin",
+    name: "Tabla Personal",
+    icon: "nc-icon nc-chart-pie-35",
+    component: CambioClave,
+  },
+  {
+    path: "/captura-tiempos",
+    layout: "/admin",
+    name: "Registro de Tiempos",
+    icon: "nc-icon nc-chart-pie-35",
+    component: CapturaTiempos,
   },
 ];
 export default routes;

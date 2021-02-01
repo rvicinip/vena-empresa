@@ -12,7 +12,7 @@ import {
   Col,
 } from "react-bootstrap";
 
-function LoginCliente() {
+function LoginEmpresa() {
   const [cardClasses, setCardClasses] = React.useState("card-hidden");
   React.useEffect(() => {
     setTimeout(function () {
@@ -37,9 +37,9 @@ function LoginCliente() {
                   <Card.Body>
                     <Card.Body>
                       <Form.Group>
-                        <label>Cédula Identidad</label>
+                        <label>Su Id Usuario</label>
                         <Form.Control
-                          placeholder="Su cédula"
+                          placeholder="Su Id Usuario"
                           type="text"
                         ></Form.Control>
                       </Form.Group>
@@ -77,7 +77,7 @@ function LoginCliente() {
           style={{
             backgroundImage:
               "url(" +
-              require("assets/img/Arbol.jpg").default +
+              require("assets/img/full-screen-image-2.jpg").default +
               ")",
           }}
         ></div>
@@ -86,4 +86,4 @@ function LoginCliente() {
   );
 }
 
-export default LoginCliente;
+export default LoginEmpresa;

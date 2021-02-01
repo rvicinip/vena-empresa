@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Light Bootstrap Dashboard PRO React - v2.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/light-bootstrap-dashboard-pro-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
@@ -26,13 +10,23 @@ import "assets/css/demo.css";
 import AuthLayout from "layouts/Auth.js";
 import AdminLayout from "layouts/Admin.js";
 
-ReactDOM.render(
+/*ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/auth" render={(props) => <AuthLayout {...props} />} />
       <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
-      <Redirect from="/" to="/auth/cambio-clave" />
+      <Redirect from="/" to="/admin/dashboard" />
     </Switch>
+  </BrowserRouter>,
+  document.getElementById("root")
+);*/
+
+import { CapturaTiempos } from "components/CapturaTiempos"
+import { components } from "react-select";
+
+ReactDOM.render(
+  <BrowserRouter>
+    <CapturaTiempos />
   </BrowserRouter>,
   document.getElementById("root")
 );
