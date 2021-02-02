@@ -11,13 +11,14 @@ import  Select from "react-select"
 
 
 
-export const CapturaTiempos = () => {
+export const CapturaTiempos = (props) => {
 
-  // const [nivel,setNivel] = useState[prop.empresa];
-  const [empleado,setEmpleado] = useState[prop.empleado]; 
-  const [tablas,setTablas] = useState[prop.tablas];
-  const [frecuencia,setFrecuencia] = useState[prop.frecuencia];
-  const [diccionario,setDiccionario] = useState[prop.diccionario];
+  // const [nivel,setNivel] = useState[props.empresa];
+  const [empleado,setEmpleado] = useState[props.empleado]; 
+  const [tablas,setTablas] = useState[props.tablas];
+  const [frecuencia,setFrecuencia] = useState[props.frecuencia];
+  const [diccionario,setDiccionario] = useState[props.diccionario];
+  
   console.log("Cuál es el NIT de la empresa?",props.empresa.nit);
   console.log("Cuál es el nombre de la empresa",props.empresa.nombre);
   console.log("Cuantos niveles tiene la empresa?",props.empresa.niveles);

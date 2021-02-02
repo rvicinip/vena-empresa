@@ -205,7 +205,7 @@ export const Personal = () => {
 
 
 
-    * 
+    */
 
     return (
         <div className="p-grid table-demo">
@@ -215,7 +215,7 @@ export const Personal = () => {
                     value={personal}
                     paginator
                     className="p-datatable-responsive  p-datatable-sm style={{ font-size: 12px }}"
-                    rows={50}
+                    rows={500}
                     dataKey="Id"
                     rowHover
                     selection={selectedPerson}
