@@ -14,7 +14,7 @@ import {
   Col,
 } from "react-bootstrap";
 
-function RegisterPage() {
+function Registro() {
   return (
     <>
       <div
@@ -30,10 +30,10 @@ function RegisterPage() {
                   <Col md="8">
                     <div className="header-text">
                       <Card.Title as="h2">
-                        Light Bootstrap Dashboard PRO
+                        Registro de Consultor
                       </Card.Title>
                       <Card.Subtitle as="h4">
-                        Register for free and experience the dashboard today
+                        Registrese para poder iniciar sus operaciones en BPM
                       </Card.Subtitle>
                       <hr></hr>
                     </div>
@@ -159,4 +159,4 @@ function RegisterPage() {
   );
 }
 
-export default RegisterPage;
+export default Registro;

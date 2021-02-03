@@ -89,7 +89,7 @@ const empleado = {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Trimestre",
       tipo: "1",
-      valor: "480",
+      valor: "480",nc-chart-pie-35
       unidad: "hora"
     },
     {

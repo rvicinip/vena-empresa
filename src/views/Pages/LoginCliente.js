@@ -12,7 +12,7 @@ import {
   Col,
 } from "react-bootstrap";
 
-function LoginEmpresa() {
+function Login() {
   const [cardClasses, setCardClasses] = React.useState("card-hidden");
   React.useEffect(() => {
     setTimeout(function () {
