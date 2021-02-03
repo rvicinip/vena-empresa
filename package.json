@@ -1,8 +1,8 @@
 {
-  "name": "light-bootstrap-dashboard-pro-react",
+  "name": "VENA-BPM",
   "version": "2.0.0",
   "private": true,
-  "dependencies": {
+  "dependencies": { 
     "@fortawesome/fontawesome-free": "5.15.2",
     "@hookform/error-message": "0.0.5",
     "bootstrap": "4.5.3",

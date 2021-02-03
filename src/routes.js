@@ -7,7 +7,7 @@ import LoginEmpresa from "views/Pages/LoginEmpresa.js";
 import LoginGerencia from "views/Pages/LoginGerencia.js";
 import CambioClave from "views/Pages/CambioClave.js";
 import Personal from "components/Personal.js";
-import { CapturaTiempos } from "components/CapturaTiempos.js";
+import CapturaTiempos from "components/CapturaTiempos.js";
 
 var routes = [
   {

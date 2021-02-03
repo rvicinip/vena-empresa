@@ -1,5 +1,5 @@
 import React from "react"
-import { CapturaTiempos } from "./CapturaTiempos";
+import  CapturaTiempos from "./CapturaTiempos";
 
 export default function Inicio() {
   // Cargar el diccionario de actividades
@@ -15,10 +15,11 @@ export default function Inicio() {
     niveles: 3,
     estado: "A",
   };
+ 
 
-  const empleado = {
+const empleado = {
     id_usuario: "12345678",
-    clave: "$2b$12$LbAzbm07kLO/VXFKj732aePhMjfo9NcjFQyITQpuz0Rj8s6cHZbEe",
+    clave: "$2b$12$LbAzbm  07kLO/VXFKj732aePhMjfo9NcjFQyITQpuz0Rj8s6cHZbEe",
     nombre: "Isabel Escobar",
     salario: 3125000,
     jornada: "Diurna",
@@ -30,7 +31,9 @@ export default function Inicio() {
     codigo: 711768,
   };
 
+
   const tablas = ["Macroproceso", "Proceso", "Actividad"];
+
 
   const frecuencia = [
     {
@@ -38,133 +41,136 @@ export default function Inicio() {
       nombre: "Minuto",
       tipo: "1",
       valor: "0.016667",
-      unidad: "hora",
+      unidad: "hora"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Hora",
       tipo: "1",
       valor: "1",
-      unidad: "hora",
+      unidad: "hora"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Dia",
       tipo: "1",
       valor: "8",
-      unidad: "hora",
+      unidad: "hora"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Semana",
       tipo: "1",
       valor: "40",
-      unidad: "hora",
+      unidad: "hora"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Quincena",
       tipo: "1",
       valor: "80",
-      unidad: "hora",
+      unidad: "hora"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Mes",
       tipo: "1",
       valor: "160",
-      unidad: "hora",
+      unidad: "hora"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Bimestre",
       tipo: "1",
       valor: "320",
-      unidad: "hora",
+      unidad: "hora"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Trimestre",
       tipo: "1",
       valor: "480",
-      unidad: "hora",
+      unidad: "hora"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Semestre",
       tipo: "1",
       valor: "960",
-      unidad: "hora",
+      unidad: "hora"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Año",
       tipo: "1",
       valor: "1920",
-      unidad: "hora",
+      unidad: "hora"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Dia",
       tipo: "2",
       valor: "1",
-      unidad: "día",
+      unidad: "día"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Semana",
       tipo: "2",
       valor: "5",
-      unidad: "día",
+      unidad: "día"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Quincena",
       tipo: "2",
       valor: "10",
-      unidad: "día",
+      unidad: "día"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Mes",
       tipo: "2",
       valor: "20",
-      unidad: "día",
+      unidad: "día"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Bimestre",
       tipo: "2",
       valor: "40",
-      unidad: "día",
+      unidad: "día"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Trimestre",
       tipo: "2",
       valor: "60",
-      unidad: "día",
+      unidad: "día"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Semestre",
       tipo: "2",
       valor: "120",
-      unidad: "día",
+      unidad: "día"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Año",
       tipo: "2",
       valor: "240",
-      unidad: "día",
+      unidad: "día"
     },
   ];
+
+
 
   const diccionario = [
     {
       empresa: "60155c7052eab65a94b04d10",
       idNivel: "001",
+      idNivelPadre: "0",
       nombreNivel: "Direccionamiento estratégico",
     },
     {
@@ -210,7 +216,7 @@ export default function Inicio() {
       idNivel: "001002",
       idNivelPadre: "001",
       nombreNivel: "Gobierno corporativo",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -241,7 +247,7 @@ export default function Inicio() {
       idNivel: "001003",
       idNivelPadre: "001",
       nombreNivel: "Gestión del Presupuesto",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -262,15 +268,16 @@ export default function Inicio() {
     {
       empresa: "60155c7052eab65a94b04d10",
       idNivel: "002",
-      nombreNivel: "Sistemas integrados de gestión (Gestión Control y Calidad)",
-      descripcion: " ",
+      idNivelPadre: "0",
+      nombreNivel: "Sistemas integrados de gestión -Gestión Control y Calidad-",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       idNivel: "002001",
       idNivelPadre: "002",
       nombreNivel: "Gestión del riesgo",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -326,7 +333,7 @@ export default function Inicio() {
       idNivel: "002002",
       idNivelPadre: "002",
       nombreNivel: "Sistema de gestión de calidad",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -357,7 +364,7 @@ export default function Inicio() {
       idNivel: "002003",
       idNivelPadre: "002",
       nombreNivel: "Auditoria y Control Integral",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -378,15 +385,17 @@ export default function Inicio() {
     {
       empresa: "60155c7052eab65a94b04d10",
       idNivel: "003",
+      idNivelPadre: "0",
       nombreNivel: "Gestión Comercial",
-      descripcion: " ",
+      descripcion: " "
+      
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       idNivel: "003001",
       idNivelPadre: "003",
       nombreNivel: "Gestión del Asociado",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -439,15 +448,16 @@ export default function Inicio() {
     {
       empresa: "60155c7052eab65a94b04d10",
       idNivel: "004",
+      idNivelPadre: "0",
       nombreNivel: "Gestión de Operaciones",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       idNivel: "004001",
       idNivelPadre: "004",
       nombreNivel: "Gestionar Ahorro",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -470,7 +480,7 @@ export default function Inicio() {
       idNivel: "004002",
       idNivelPadre: "004",
       nombreNivel: "Gestionar Crédito",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -493,7 +503,7 @@ export default function Inicio() {
       idNivel: "004003",
       idNivelPadre: "004",
       nombreNivel: "Seguros",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -532,7 +542,7 @@ export default function Inicio() {
       idNivel: "004004",
       idNivelPadre: "004",
       nombreNivel: "Cartera",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -611,7 +621,7 @@ export default function Inicio() {
       idNivel: "004005",
       idNivelPadre: "004",
       nombreNivel: "Gestionar Garantías",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -633,15 +643,16 @@ export default function Inicio() {
     {
       empresa: "60155c7052eab65a94b04d10",
       idNivel: "005",
+      idNivelPadre: "0",
       nombreNivel: "Transferencia Solidaria",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       idNivel: "005001",
       idNivelPadre: "005",
       nombreNivel: "Gestión Social ",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -688,7 +699,7 @@ export default function Inicio() {
       idNivel: "005002",
       idNivelPadre: "005",
       nombreNivel: "Gestionar Educación",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -735,7 +746,7 @@ export default function Inicio() {
       idNivel: "005003",
       idNivelPadre: "005",
       nombreNivel: "Gestionar emprendimiento",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -790,7 +801,7 @@ export default function Inicio() {
       idNivel: "005004",
       idNivelPadre: "005",
       nombreNivel: "Gestionar Beneficios",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -811,15 +822,16 @@ export default function Inicio() {
     {
       empresa: "60155c7052eab65a94b04d10",
       idNivel: "006",
+      idNivelPadre: "0",
       nombreNivel: "Desarrollo Humano y Organizacional",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       idNivel: "006001",
       idNivelPadre: "006",
       nombreNivel: "Arquitectura organizacional",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -842,7 +854,7 @@ export default function Inicio() {
       idNivel: "006002",
       idNivelPadre: "006",
       nombreNivel: "Atracción del talento",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -865,7 +877,7 @@ export default function Inicio() {
       idNivel: "006003",
       idNivelPadre: "006",
       nombreNivel: "Bienestar laboral",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -888,7 +900,7 @@ export default function Inicio() {
       idNivel: "006004",
       idNivelPadre: "006",
       nombreNivel: "Desarrollo Humano",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -919,7 +931,7 @@ export default function Inicio() {
       idNivel: "006005",
       idNivelPadre: "006",
       nombreNivel: "Relaciones laborales",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -950,7 +962,7 @@ export default function Inicio() {
       idNivel: "006006",
       idNivelPadre: "006",
       nombreNivel: "Compensación ",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -971,15 +983,16 @@ export default function Inicio() {
     {
       empresa: "60155c7052eab65a94b04d10",
       idNivel: "007",
+      idNivelPadre: "0",
       nombreNivel: "Gestión Administrativa",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       idNivel: "007001",
       idNivelPadre: "007",
       nombreNivel: "Gestión de compras",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -1018,7 +1031,7 @@ export default function Inicio() {
       idNivel: "007002",
       idNivelPadre: "007",
       nombreNivel: "Gestión documental",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -1057,7 +1070,7 @@ export default function Inicio() {
       idNivel: "007003",
       idNivelPadre: "007",
       nombreNivel: "Logística Interna",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -1080,7 +1093,7 @@ export default function Inicio() {
       idNivel: "007004",
       idNivelPadre: "007",
       nombreNivel: "Mantenimiento de Activos e Infraestructura",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -1103,7 +1116,7 @@ export default function Inicio() {
       idNivel: "007005",
       idNivelPadre: "007",
       nombreNivel: "Funciones Generales",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -1164,15 +1177,16 @@ export default function Inicio() {
     {
       empresa: "60155c7052eab65a94b04d10",
       idNivel: "008",
+      idNivelPadre: "0",
       nombreNivel: "Gestión Jurídica",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       idNivel: "008001",
       idNivelPadre: "008",
       nombreNivel: "Requerimientos Jurídicos",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -1211,7 +1225,7 @@ export default function Inicio() {
       idNivel: "008002",
       idNivelPadre: "008",
       nombreNivel: "Gestión Jurídica Externa ",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -1234,7 +1248,7 @@ export default function Inicio() {
       idNivel: "008003",
       idNivelPadre: "008",
       nombreNivel: "Procesos Democráticos ",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -1263,15 +1277,16 @@ export default function Inicio() {
     {
       empresa: "60155c7052eab65a94b04d10",
       idNivel: "009",
+      idNivelPadre: "0",
       nombreNivel: "Gestión financiera Tributaria y Contable",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       idNivel: "009001",
       idNivelPadre: "009",
       nombreNivel: "Contabilidad",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -1350,7 +1365,7 @@ export default function Inicio() {
       idNivel: "009002",
       idNivelPadre: "009",
       nombreNivel: "Gestión Tributaria",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -1397,7 +1412,7 @@ export default function Inicio() {
       idNivel: "009003",
       idNivelPadre: "009",
       nombreNivel: "Financiera",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -1428,7 +1443,7 @@ export default function Inicio() {
       idNivel: "009004",
       idNivelPadre: "009",
       nombreNivel: "Tesorería",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -1513,15 +1528,16 @@ export default function Inicio() {
     {
       empresa: "60155c7052eab65a94b04d10",
       idNivel: "010",
+      idNivelPadre: "0",
       nombreNivel: "Gestión de mercadeo",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       idNivel: "010001",
       idNivelPadre: "010",
       nombreNivel: "Gestionar mercadeo",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -1577,7 +1593,7 @@ export default function Inicio() {
       idNivel: "010002",
       idNivelPadre: "010",
       nombreNivel: "Gestionar base de datos",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -1601,7 +1617,7 @@ export default function Inicio() {
       idNivel: "010003",
       idNivelPadre: "010",
       nombreNivel: "Gestionar comunicaciones",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -1616,8 +1632,7 @@ export default function Inicio() {
       idNivel: "010003002",
       idNivelPadre: "010003",
       nombreNivel: "Diseño y desarrollo de las piezas de comunicación",
-      descripcion:
-        "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc at lacus a nisl hendrerit euismod nec vitae orci. Quisque sodales tincidunt purus rutrum lacinia. Phasellus augue sem, bibendum sed nulla nec, hendrerit congue dolor. Sed facilisis justo at semper tempus. Duis vel dapibus neque. Praesent efficitur laoreet neque nec fermentum. Fusce vehicula elementum leo ac vehicula. Maecenas aliquam dolor ac nulla tincidunt, at pellentesque lorem vehicula. Aenean feugiat eros est.",
+      descripcion: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc at lacus a nisl hendrerit euismod nec vitae orci. Quisque sodales tincidunt purus rutrum lacinia. Phasellus augue sem, bibendum sed nulla nec, hendrerit congue dolor. Sed facilisis justo at semper tempus. Duis vel dapibus neque. Praesent efficitur laoreet neque nec fermentum. Fusce vehicula elementum leo ac vehicula. Maecenas aliquam dolor ac nulla tincidunt, at pellentesque lorem vehicula. Aenean feugiat eros est."
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -1654,15 +1669,16 @@ export default function Inicio() {
     {
       empresa: "60155c7052eab65a94b04d10",
       idNivel: "011",
+      idNivelPadre: "0",
       nombreNivel: "Gestión de TI",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       idNivel: "011001",
       idNivelPadre: "011",
       nombreNivel: "PETI (Planeación Estratégica de TI)",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -1693,7 +1709,7 @@ export default function Inicio() {
       idNivel: "011002",
       idNivelPadre: "011",
       nombreNivel: "Administración y Gestión de TI",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -1732,7 +1748,7 @@ export default function Inicio() {
       idNivel: "011003",
       idNivelPadre: "011",
       nombreNivel: "Control y Garantía de TI",
-      descripcion: " ",
+      descripcion: " "
     },
     {
       empresa: "60155c7052eab65a94b04d10",
@@ -1759,24 +1775,31 @@ export default function Inicio() {
       descripcion:
         "Pellentesque non lacus nec purus euismod luctus nec id lacus. Donec dignissim eleifend nisl, vitae pulvinar ipsum suscipit at. Integer varius neque quis est vulputate, eget feugiat ante fringilla. Morbi eu augue purus. Vestibulum interdum risus ut imperdiet malesuada. Aliquam laoreet, augue eu convallis placerat, est orci dignissim sapien, sed facilisis elit est eget lacus. Nullam sit amet aliquet lacus, in aliquet nunc.",
     },
-  ];
-
+  ]; 
+ 
   const reporteTiempos = ["tiempo", "ejemplo"];
+
+  const datos = {dato1: empresa,
+    dato2: empleado,
+    dato3: tablas,
+    dato4: frecuencia,
+    dato5: diccionario,
+    dato6: reporteTiempos
+    }
+
 
   // Debe enviarme la table de frecuencias de la empresa para lo cual no aparece en la BD en el mismo objeto
   // Debe enviarme los movimientos de la Captura e Tiempos del usuario
   // Debo enviarle informacion hacia arriba de ñp que ud necesita para actualizar la tabla de Captura de Tiempos de todos los empleados
+      // tablas={tablas}
+        // frecuencia={frecuencia}
+        // diccionario={diccionario}
+        // reporteTiempos={reporteTiempos}
 
   return (
     <div>
       <CapturaTiempos
-        empresa={empresa}
-        empleado={empleado}
-        tablas={tablas}
-        frecuencia={frecuencia}
-        diccionario={diccionario}
-        reporteTiempos={reporteTiempos}
-      />
+        datos={datos}/>
     </div>
   );
 }

@@ -6,82 +6,137 @@ import { ServicioNivel1 } from "services/ServicioNivel1";
 import { InputText } from "primereact/inputtext";
 import { Dialog } from "primereact/dialog";
 import { Container, Row, DropdownButton, Dropdown } from "react-bootstrap";
-import  Select from "react-select"
+import Select from "react-select";
+import PropTypes from "prop-types";
+import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
+import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
 
+function CapturaTiempos(props) {
 
-
-
-export const CapturaTiempos = (props) => {
-
-  // const [nivel,setNivel] = useState[props.empresa];
-  const [empleado,setEmpleado] = useState[props.empleado]; 
-  const [tablas,setTablas] = useState[props.tablas];
-  const [frecuencia,setFrecuencia] = useState[props.frecuencia];
-  const [diccionario,setDiccionario] = useState[props.diccionario];
   
-  console.log("Cuál es el NIT de la empresa?",props.empresa.nit);
-  console.log("Cuál es el nombre de la empresa",props.empresa.nombre);
-  console.log("Cuantos niveles tiene la empresa?",props.empresa.niveles);
+  const empresa = props.datos.dato1;
+  const empleado = props.datos.dato2;
+  const tablas = props.datos.dato3;
+  const frecuencia = props.datos.dato4;
+  const diccionario = props.datos.dato5;
+  let reporteTiempos = props.datos.dato6;
+  const placeholderN1 = "Seleccione ".concat(tablas[0],"...")
+  const placeholderN2 = "Seleccione ".concat(tablas[1],"...")
+  const placeholderN3 = "Seleccione ".concat(tablas[2],"...")
 
-  //  TABLA DE PERSONAL
+  const [selectN1, setSelectN1] = useState(null);
+  const [selectN2, setSelectN2] = useState(null);
+  const [selectN3, setSelectN3] = useState(null);
+
+  const [diccN1, setDiccN1] = useState(() => diccionario.filter(entrada => entrada.idNivelPadre==="0"));
+  const [diccN2, setDiccN2] = useState(null);
+  const [diccN3, setDiccN3] = useState(null);
+
+  const [inhabilitarDropdownN2, setInhabilitarDropdownN2] = useState(true);
+  const [inhabilitarDropdownN3, setInhabilitarDropdownN3] = useState(true);
+
+  const [descripcionDef, setDescripcionDef] = useState(null)
+
+
+  
+  useEffect(() => {
+    console.log("INICIALIZACION DE DICCIONARIO");
+    console.log("Valor Inicial de Diccionario N1:", diccN1);
+
+
+},[ ]) 
+
+useEffect(() => {
+    if (selectN1 != null) {
+      setDiccN2(diccionario.filter(entrada => entrada.idNivelPadre===selectN1.idNivel))
+      console.log(selectN1.idNivel, "DiccN2", diccN2)
+    } 
+    
+    
+},[selectN1])
+  
+useEffect(() => {
+  console.log("Cambió N2", selectN2);
+  console.log("INICIALIZACION DE DICCIONARIO NIVEL 3");
+  console.log("selectN1",selectN1)
+  console.log("selectN2",selectN2)
+  if (selectN2 != null) {
+    setDiccN3(diccionario.filter(entrada => entrada.idNivelPadre===selectN2.idNivel))
+    console.log(selectN2.idNivel, "DiccN3", diccN3)
+  } 
+  
+  
+},[selectN2])
+ 
+
+
+  const onChangeN1  = obj => {
+    setSelectN1(obj)  
+    setInhabilitarDropdownN2(false) 
+    setInhabilitarDropdownN3(false)     
+    setSelectN2(null)
+    setSelectN3(null)       
+  };
+
+  const onChangeN2  = obj => {
+    setSelectN2(obj)  
+    setInhabilitarDropdownN3(false)     
+    setSelectN3(null)   
+  };
+
+  const onChangeN3  = obj => {
+    setSelectN3(obj)  
+    setDescripcionDef(obj.descripcion)
+    
+  };
+
 
   return (
     <div>
       <Container>
         <Row>
-          <div col-4>
-            <h1>Selección de Actividades</h1>
-            <Select />
-            <DropdownButton title="Nivel 1" key="1" id="dropdown-nivel1" onSelect={seleccionNivel1}>
-              {itemNivel1.map((item1) => (
-                <Dropdown.Item eventKey={item1.idNivel1}>
-                  {item1.nombreNivel1}
-                </Dropdown.Item>
-              ))}
+          <div className = "col-md-4">
+            <h3>Selección de Actividades</h3>
+            <Select 
+            placeholder = {placeholderN1}
+            value = {selectN1}
+            options={diccN1}
+            onChange={onChangeN1}
+            getOptionName={option => option.idNivel}
+            getOptionLabel={option => option.nombreNivel}/>
 
-            </DropdownButton>
-            <DropdownButton title="Nivel 2" key="2" id="dropdown-nivel2" onSelect={seleccionNivel2} >
-              {itemNivel2.map((item2) => (
-                <Dropdown.Item eventKey={item2.idNivel2}>
-                  {item2.nombreNivel2}
-                </Dropdown.Item>
-              ))}
-            </DropdownButton>
-            <DropdownButton title="Nivel 3" key="3" id="dropdown-nivel3" onSelect={seleccionNivel3}>
-              {itemNivel3.map((item3) => (
-                <Dropdown.Item eventKey={item3.idNivel3}>
-                  {item3.nombreNivel3}
-                </Dropdown.Item>
-              ))}
-            </DropdownButton>
-            <h3>Seleccionamos Nivel 1 {nivel1}</h3>
-            <h3>Seleccionamos Nivel 2 {nivel2}</h3>
-            <h3>Seleccionamos Nivel 3 {nivel3}</h3>
+
+
+            <Select 
+            placeholder = {placeholderN2}
+            isDisabled = {inhabilitarDropdownN2}
+            value = {selectN2}
+            options={ diccN2 }
+            onChange={onChangeN2}
+            getOptionName={option => option.idNivel}
+            getOptionLabel={option => option.nombreNivel}/>
+
+
+
+            <Select 
+            placeholder = {placeholderN3}
+            isDisabled = {inhabilitarDropdownN3}
+            value = {selectN3}
+            options={ diccN3 }
+            onChange={onChangeN3}
+            getOptionName={option => option.idNivel}
+            getOptionLabel={option => option.nombreNivel}/>
+
 
           </div>
-          <div col-8></div>
+          <div className="col-md-8">
+
+          </div>
         </Row>
       </Container>
     </div>
   );
-};
+}
 
+export default CapturaTiempos;
 
-// <div>
-// {/* specifies the tag for render the country DropDownList component */}
-// <DropDownListComponent id="country-ddl" ref={(scope) => { this.countryObj = scope; }} 
-// fields={this.countryField} dataSource={this.countryData} placeholder='Select a country' 
-// change={this.onCountryChange = this.onCountryChange.bind(this)} />
-// <br />
-
-//  {/* specifies the tag for render the state DropDownList component */}
-//  <DropDownListComponent id="state-ddl" ref={(scope) => { this.stateObj = scope; }} 
-//  enabled={false} fields={this.stateField} dataSource={this.stateData} placeholder='Select a state' 
-//  change={this.onStateChange = this.onStateChange.bind(this)} />
-// <br />
-
-//  {/* specifies the tag for render the city DropDownList component */}
-// <DropDownListComponent id="city-ddl" ref={(scope) => { this.cityObj = scope; }} 
-// enabled={false} fields={this.cityField} dataSource={this.cityData} placeholder='Select a city' />
-// </div>
-// );

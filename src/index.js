@@ -10,7 +10,7 @@ import Inicio from "components/Inicio.js"
 
 import AuthLayout from "layouts/Auth.js";
 import AdminLayout from "layouts/Admin.js";
-
+ 
 /*ReactDOM.render(
   <BrowserRouter>
     <Switch>
@@ -25,9 +25,17 @@ import AdminLayout from "layouts/Admin.js";
 import { CapturaTiempos } from "components/CapturaTiempos"
 import { components } from "react-select";
 
+// ReactDOM.render(
+//   <BrowserRouter>
+//     <Inicio />
+//   </BrowserRouter>,
+//   document.getElementById("root")
+// );
 ReactDOM.render(
-  <BrowserRouter>
+  <div>
     <Inicio />
-  </BrowserRouter>,
+  </div>,
   document.getElementById("root")
 );
+
+
