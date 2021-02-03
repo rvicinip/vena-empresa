@@ -1,0 +1,29 @@
+[{
+    empresa: "60155c7052eab65a94b04d10",
+    nit: "9001234567",
+    nombre: "Valores Negociados",
+    niveles: 3,
+    estado: "A",
+  },
+  {
+    empresa: "60155c7052eab65a94b04d11",
+    nit: "890904478",
+    nombre: "Cooperativa Colanta",
+    niveles: 3,
+    estado: "A",
+  },
+  {
+    empresa: "60155c7052eab65a94b04d12",
+    nit: "900175962-6",
+    nombre: "Cooperativa de Ahorro y Crédito Colanta",
+    niveles: 4,
+    estado: "A",
+  },
+  {
+    empresa: "60155c7052eab65a94b04d14",
+    nit: "8110007404",
+    nombre: "Isagen S.A.",
+    niveles: 5,
+    estado: "A",
+  },
+ ]

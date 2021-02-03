@@ -6,9 +6,9 @@ import LoginCliente from "views/Pages/LoginCliente.js";
 import LoginEmpresa from "views/Pages/LoginEmpresa.js";
 import LoginGerencia from "views/Pages/LoginGerencia.js";
 import CambioClave from "views/Pages/CambioClave.js";
-import Personal from "components/Personal.js";
-import Inicio from "components/Inicio.js"
-import Registro from "views/Pages/Registro.js"
+import {Personal} from "components/Personal.js";
+import Inicio from "components/Inicio.js";
+import Registro from "views/Pages/Registro.js";
 import CapturaTiempos from "components/CapturaTiempos.js";
 
 var routes = [ 

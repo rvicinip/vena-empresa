@@ -1,10 +1,10 @@
 //import axios from 'axios';
-import nivel1 from "assets/databases/Nivel1.json"
+import nivel1 from "assets/databases/diccionario.json"
 
-export class ServicioNivel1 {
-
+export class ServicioDiccionario {
+ 
   getNivel1() {
-    return fetch('./Nivel1.json'
+    return fetch('./diccionario.json'
     ,{headers : {'Content-Type': 'application/json', 'Accept': 'application/json'} }
     )
       .then(function(response){

@@ -7,7 +7,7 @@ import {
   ButtonGroup,
   Card,
   Dropdown,
-  Form,
+  Form, 
   InputGroup,
   Navbar,
   Nav,
@@ -136,7 +136,7 @@ function ClienteNavbar() {
                   </Dropdown.Item>
                   <Dropdown.Item
                     href="#pablo"
-                    onClick={(e) => AdminFooter copye.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     Notification 2
                   </Dropdown.Item>

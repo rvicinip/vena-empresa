@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
 import { Button } from "primereact/button";
-import { ServicioNivel1 } from "services/ServicioNivel1";
+import { ServicioDiccionario } from "services/ServicioDiccionario";
 import { InputText } from "primereact/inputtext";
 import { Dialog } from "primereact/dialog";
 import { Container, Row, DropdownButton, Dropdown } from "react-bootstrap";

@@ -18,7 +18,7 @@ import {
   Collapse,
 } from "react-bootstrap";
 
-function AdminNavbar() {
+function ConsultorNavbar() {
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   return (
     <>
@@ -219,4 +219,4 @@ function AdminNavbar() {
   );
 }
 
-export default AdminNavbar;
+export default ConsultorNavbar;

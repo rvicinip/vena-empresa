@@ -18,8 +18,8 @@ import {
 
 // core components
 import Sidebar from "components/Sidebar/Sidebar.js";
-import AdminNavbar from "components/Navbars/AdminNavbar.js";
-import AdminFooter from "components/Footers/AdminFooter.js";
+import GerenciaNavbar from "components/Navbars/GerenciaNavbar.js";
+import GerenciaFooter from "components/Footers/GerenciaFooter.js";
 import FixedPlugin from "components/FixedPlugin/FixedPlugin.js";
 
 // dinamically create dashboard routes

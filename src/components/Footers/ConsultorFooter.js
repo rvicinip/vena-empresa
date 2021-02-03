@@ -16,7 +16,7 @@ import {
   Col,
 } from "react-bootstrap";
 
-function AdminFooter() {
+function ConsultorFooter() {
   return (
     <>
       <footer className="footer">
@@ -56,4 +56,4 @@ function AdminFooter() {
   );
 }
 
-export default AdminFooter;
+export default ConsultorFooter;
