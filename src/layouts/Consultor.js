@@ -30,7 +30,7 @@ import image2 from "assets/img/full-screen-image-2.jpg";
 import image3 from "assets/img/full-screen-image-3.jpg";
 import image4 from "assets/img/full-screen-image-4.jpg";
 
-function Admin() {
+function Consultor() {
   const [sidebarImage, setSidebarImage] = React.useState(image3);
   const [sidebarBackground, setSidebarBackground] = React.useState("black");
   const getRoutes = (routes) => {
@@ -38,7 +38,7 @@ function Admin() {
       if (prop.collapse) {
         return getRoutes(prop.views);
       }
-      if (prop.layout === "/admin") {
+      if (prop.layout === "/consultor") {
         return (
           <Route
             path={prop.layout + prop.path}
@@ -92,4 +92,4 @@ function Admin() {
   );
 }
 
-export default Admin;
+export default Consultor;

@@ -1,7 +1,7 @@
 // Nombre: routes
 
 
-import Dashboard from "views/Dashboard.js";
+import Dashboard from  "views/Dashboard.js";
 import LoginCliente from "views/Pages/LoginCliente.js";
 import LoginEmpresa from "views/Pages/LoginEmpresa.js";
 import LoginGerencia from "views/Pages/LoginGerencia.js";
@@ -12,41 +12,6 @@ import Registro from "views/Pages/Registro.js";
 import CapturaTiempos from "components/CapturaTiempos.js";
 
 var routes = [ 
-  {
-    path: "/login-gerencia",
-    layout: "/gerencia",
-    name: "Login Gerencia",
-    icon: "nc-icon nc-cicle-09",
-    component: LoginGerencia,
-  },
-  {
-    path: "/cambio-contrasena",
-    layout: "/gerencia",
-    name: "Cambio Contraseña",
-    icon: "nc-icon nc-lock-circle-open",
-    component: Dashboard,
-  },
-  {
-    path: "/dashboard-gerencia",
-    layout: "/gerencia",
-    name: "TableroGerencia",
-    icon: "nc-icon nc-chart-pie-35",
-    component: Dashboard,
-  },
-  {
-    path: "/empresas-gerencia",
-    layout: "/gerencia",
-    name: "Empresas",
-    icon: "pi pi-fw pi-sitemap",
-    component: Dashboard,
-  },
-  {
-    path: "/consultores-vena",
-    layout: "/gerencia",
-    name: "TableroGerencia",
-    icon: "pi pi-fw pi-users",
-    component: Dashboard,
-  },
   {
     path: "/login-cliente",
     layout: "/cliente",
@@ -88,7 +53,43 @@ var routes = [
     name: "Cierre Proceso",
     icon: "nc-icon nc-cloud-upload-94",
     component: Dashboard,
-  },  
+  },
+  {
+    path: "/login-gerencia",
+    layout: "/gerencia",
+    name: "Login Gerencia",
+    icon: "nc-icon nc-cicle-09",
+    component: LoginGerencia,
+  },
+  {
+    path: "/cambio-contrasena",
+    layout: "/gerencia",
+    name: "Cambio Contraseña",
+    icon: "nc-icon nc-lock-circle-open",
+    component: Dashboard,
+  },
+  {
+    path: "/dashboard-gerencia",
+    layout: "/gerencia",
+    name: "TableroGerencia",
+    icon: "nc-icon nc-chart-pie-35",
+    component: Dashboard,
+  },
+  {
+    path: "/empresas-gerencia",
+    layout: "/gerencia",
+    name: "Empresas",
+    icon: "pi pi-fw pi-sitemap",
+    component: Dashboard,
+  },
+  {
+    path: "/consultores-vena",
+    layout: "/gerencia",
+    name: "TableroGerencia",
+    icon: "pi pi-fw pi-users",
+    component: Dashboard,
+  },
+  
   {
     path: "/login-empresa",
     layout: "/consultor",

@@ -30,9 +30,9 @@ function LoginEmpresa() {
           <Container>
             <Col className="mx-auto" lg="4" md="8">
               <Form action="" className="form" method="">
-                <Card className={"card-login " + cardClasses}>
+                <Card className={"card-login " }>
                   <Card.Header>
-                    <h3 className="header text-center">Bienvenido!</h3>
+                    <h3 className="header text-center">Sr Consultor Bienvenido!</h3>
                   </Card.Header>
                   <Card.Body>
                     <Card.Body>

@@ -38,13 +38,17 @@ function Cliente() {
       if (prop.collapse) {
         return getRoutes(prop.views);
       }
+
       if (prop.layout === "/cliente") {
         return (
+          <div>
           <Route
             path={prop.layout + prop.path}
             key={key}
             component={prop.component}
           />
+          <h5>MUESTRELO!!!!!!!!!!!{prop.layout}{prop.path}</h5>
+          </div>
         );
       } else {
         return null;

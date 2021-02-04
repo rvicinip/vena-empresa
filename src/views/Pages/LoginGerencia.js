@@ -32,7 +32,7 @@ function LoginGerencia() {
               <Form action="" className="form" method="">
                 <Card className={"card-login " + cardClasses}>
                   <Card.Header>
-                    <h3 className="header text-center">Bienvenido!</h3>
+                    <h3 className="header text-center">Sr Gerente Bienvenido!</h3>
                   </Card.Header>
                   <Card.Body>
                     <Card.Body>

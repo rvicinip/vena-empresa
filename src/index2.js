@@ -8,9 +8,9 @@ import "assets/scss/light-bootstrap-dashboard-pro-react.scss?v=2.0.0";
 import "assets/css/demo.css";
 import Inicio from "components/Inicio.js"
 
-import AuthLayout from "layouts/Auth.js";
-import AdminLayout from "layouts/Admin.js";
- 
+
+import LoginPage from "views/Pages/LoginCliente.js"
+  
 /*ReactDOM.render(
   <BrowserRouter>
     <Switch>
@@ -33,7 +33,7 @@ import { components } from "react-select";
 // );
 ReactDOM.render(
   <div>
-    <Inicio />
+    <LoginPage />
   </div>,
   document.getElementById("root")
 );
