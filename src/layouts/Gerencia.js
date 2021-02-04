@@ -60,11 +60,11 @@ function Admin() {
           background={sidebarBackground}
         />
         <div className="main-panel">
-          <AdminNavbar />
+          <GerenciaNavbar />
           <div className="content">
             <Switch>{getRoutes(routes)}</Switch>
           </div>
-          <AdminFooter />
+          <GerenciaFooter />
           <div
             className="close-layer"
             onClick={() =>

@@ -12,7 +12,7 @@ import {
   Col,
 } from "react-bootstrap";
 
-function Login() {
+function LoginCliente() {
   const [cardClasses, setCardClasses] = React.useState("card-hidden");
   React.useEffect(() => {
     setTimeout(function () {
@@ -86,4 +86,4 @@ function Login() {
   );
 }
 
-export default LoginEmpresa;
+export default LoginCliente;

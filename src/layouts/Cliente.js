@@ -60,11 +60,11 @@ function Cliente() {
           background={sidebarBackground}
         />
         <div className="main-panel">
-          <AdminNavbar />
+          <ClienteNavbar />
           <div className="content">
             <Switch>{getRoutes(routes)}</Switch>
           </div>
-          <AdminFooter />
+          <ClienteFooter />
           <div
             className="close-layer"
             onClick={() =>

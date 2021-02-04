@@ -1762,7 +1762,7 @@ const empleado = {
       empresa: "60155c7052eab65a94b04d10",
       idNivel: "011003002",
       idNivelPadre: "011003",
-      nombreNivel:
+      nombreNivel: 
         "Mantenimiento Preventivo y Correctivo de Elementos Tecnológicos",
       descripcion:
         "Nullam blandit tortor ac quam lobortis, sit amet vestibulum tellus hendrerit. Nam vitae cursus tortor. Vestibulum ac hendrerit erat. Mauris metus massa, congue eget lacus eu, consequat congue odio. Etiam mattis nec neque a interdum. Etiam egestas placerat accumsan. Vestibulum fermentum, purus vel imperdiet sodales, ligula sapien luctus dolor, vitae varius dolor lacus ut metus. Sed nulla magna, faucibus gravida justo non, tincidunt vehicula massa. Duis lobortis dignissim vehicula. Nunc elementum ipsum id lobortis euismod. Cras non molestie leo. Praesent malesuada vel sem id tempus. Nam ultrices elit sit amet magna sodales viverra.",

@@ -2,7 +2,7 @@
   "name": "VENA-BPM",
   "version": "2.0.0",
   "private": true,
-  "dependencies": { 
+  "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.2",
     "@hookform/error-message": "0.0.5",
     "bootstrap": "4.5.3",
@@ -13,6 +13,7 @@
     "node-sass": "4.14.1",
     "nouislider": "14.6.3",
     "perfect-scrollbar": "1.5.0",
+    "primeicons": "^4.1.0",
     "primereact": "^6.0.1",
     "prop-types": "15.7.2",
     "react": "17.0.1",
