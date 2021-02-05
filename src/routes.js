@@ -10,6 +10,7 @@ import {Personal} from "components/Personal.js";
 import Inicio from "components/Inicio.js";
 import Registro from "views/Pages/Registro.js";
 import CapturaTiempos from "components/CapturaTiempos.js";
+import PaginaUsuarioEmpresa from "views/Pages/PaginaUsuarioEmpresa.js";
 
 import Cliente from "layouts/Cliente.js"
 
@@ -19,6 +20,7 @@ var routes = [
     layout: "/cliente",
     name: "Login Cliente",
     icon: "nc-icon nc-circle-09",
+    tablero: false,
     component: LoginCliente,
   },
   {
@@ -26,6 +28,7 @@ var routes = [
     layout: "/cliente",
     name: "Cambio Contraseña",
     icon: "nc-icon nc-lock-circle-open",
+    tablero: false,    
     component: CambioClave,
   },
   {
@@ -33,6 +36,7 @@ var routes = [
     layout: "/cliente",
     name: "Menu Actividades",
     icon: "pi pi-fw pi-home",
+    tablero: true,
     component: Cliente,
   },  
   {
@@ -40,6 +44,7 @@ var routes = [
     layout: "/cliente",
     name: "Seleccion Actividades",
     icon: "nc-icon nc-bullet-list-67",
+    tablero: true,
     component: Dashboard,
   },  
   {
@@ -47,6 +52,7 @@ var routes = [
     layout: "/cliente",
     name: "Captura Frecuencias",
     icon: "nc-icon nc-watch-time",
+    tablero: true,
     component: Inicio,
   },  
   {
@@ -54,6 +60,7 @@ var routes = [
     layout: "/cliente",
     name: "Cierre Proceso",
     icon: "nc-icon nc-cloud-upload-94",
+    tablero: true,
     component: Dashboard,
   },
   {
@@ -61,6 +68,7 @@ var routes = [
     layout: "/gerencia",
     name: "Login Gerencia",
     icon: "nc-icon nc-cicle-09",
+    tablero: false,
     component: LoginGerencia,
   },
   {
@@ -68,6 +76,7 @@ var routes = [
     layout: "/gerencia",
     name: "Cambio Contraseña",
     icon: "nc-icon nc-lock-circle-open",
+    tablero: false,
     component: Dashboard,
   },
   {
@@ -75,6 +84,7 @@ var routes = [
     layout: "/gerencia",
     name: "Tablero Gerencia",
     icon: "nc-icon nc-chart-pie-35",
+    tablero: true,
     component: Dashboard,
   },
   {
@@ -82,6 +92,7 @@ var routes = [
     layout: "/gerencia",
     name: "Empresas",
     icon: "pi pi-fw pi-sitemap",
+    tablero: true,
     component: Dashboard,
   },
   {
@@ -89,20 +100,23 @@ var routes = [
     layout: "/gerencia",
     name: "TableroGerencia",
     icon: "pi pi-fw pi-users",
+    tablero: true,
     component: Dashboard,
   },
   {
     path: "/login-empresa",
     layout: "/empresa",
-    name: "Login Empresa",
+    name: "Login Consultor",
     icon: "nc-icon nc-circle-09",
+    tablero: false,
     component: LoginEmpresa,
   },
-  {
+    {
     path: "/cambio-clave",
     layout: "/empresa",
-    name: "Cambio Contraseñas",
+    name: "Cambio Contraseña",
     icon: "nc-icon nc-lock-circle-open",
+    tablero: false,
     component: CambioClave,
   },
   {
@@ -110,28 +124,79 @@ var routes = [
     layout: "/empresa",
     name: "Registro empresa",
     icon: "nc-icon nc-chart-pie-35",
+    tablero: false,
     component: Registro ,
-  },  
+  },
   {
-    path: "/tabla-personal",
+    path: "/datos-consultor",
     layout: "/empresa",
-    name: "Personal",
-    icon: "pi pi-fw pi-users",
-    component: Personal,
+    name: "Página Usuario",
+    icon: "nc-icon nc-button-power",
+    tablero: false,
+    component: PaginaUsuarioEmpresa,
+
   },
   {
     path: "/info-empresa",
     layout: "/empresa",
-    name: "Info Empresa",
-    icon: "pi pi-fw pi-sitemap",
+    name: "Tablero Control",
+    icon: "nc-icon nc-chart-bar-32",
+    tablero: true,
     component: Dashboard,
   },
+  {
+    path: "/tabla-personal",
+    layout: "/empresa",
+    name: "Personal",
+    icon: "nc-icon nc-single-02",
+    mini: "B",
+    tablero: true,
+    component: Personal,
+  },
+  {
+    collapse: true,
+    layout: "/empresa",
+    name: "Referencias",
+    state: "openComponents",
+    tablero: true,
+    icon: "nc-icon nc-app",
+    views: 
+    [
+      {
+        path: "/diccionario",
+        layout: "/empresa",
+        name: "Diccionario",
+        mini: "AC",
+        tablero: true,
+        component: Dashboard,
+      },
+      {
+        path: "/frecuencias",
+        layout: "/empresa",
+        name: "Tabla Frecuencias",
+        mini: "FR",
+        tablero: true,
+        component: Dashboard,
+      }
+    ]
+  },  
+
   {
     path: "/cierre-empresa",
     layout: "/empresa",
     name: "Cierre Empresa",
-    icon: "pi pi-fw pi-check-circle",
+    icon: "nc-icon nc-cloud-upload-94",
+    tablero: true,
     component: Dashboard,
+  },
+  {
+    path: "/logoff",
+    layout: "/empresa",
+    name: "Terminar Sesión",
+    icon: "nc-icon nc-button-power",
+    tablero: true,
+    component: Dashboard,
+
   }
-];
+  ];
 export default routes;

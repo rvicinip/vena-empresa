@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import PropTypes from "prop-types";
 
+
 // react-bootstrap components
 import {
   Badge,
@@ -19,10 +20,10 @@ import {
   Col,
 } from "react-bootstrap";
 
-function Sidebar({ routes, image, background }) {
+function Sidebar({ empleado, routes, image, background }) {
   // to check for active links and opened collapses
   let location = useLocation();
-  console.log("Entro a Sidebar",routes)
+  const nombreEmpleado = empleado
  
   // this is for the user collapse
   const [userCollapseState, setUserCollapseState] = React.useState(false);
@@ -167,7 +168,7 @@ function Sidebar({ routes, image, background }) {
                 aria-expanded={userCollapseState}
               >
                 <span>
-                  Tania Andrew <b className="caret"></b>
+                  {nombreEmpleado} <b className="caret"></b>
                 </span>
               </a>
               <Collapse id="collapseExample" in={userCollapseState}>
@@ -180,7 +181,7 @@ function Sidebar({ routes, image, background }) {
                         onClick={(e) => e.preventDefault()}
                       >
                         <span className="sidebar-mini">MP</span>
-                        <span className="sidebar-normal">My Profile</span>
+                        <span className="sidebar-normal">Mi Perfil</span>
                       </a>
                     </li>
                     <li>
@@ -190,7 +191,7 @@ function Sidebar({ routes, image, background }) {
                         onClick={(e) => e.preventDefault()}
                       >
                         <span className="sidebar-mini">EP</span>
-                        <span className="sidebar-normal">Edit Profile</span>
+                        <span className="sidebar-normal">Editar Perfil</span>
                       </a>
                     </li>
                     <li>
@@ -199,8 +200,8 @@ function Sidebar({ routes, image, background }) {
                         href="#pablo"
                         onClick={(e) => e.preventDefault()}
                       >
-                        <span className="sidebar-mini">S</span>
-                        <span className="sidebar-normal">Settings</span>
+                        <span className="sidebar-mini">CC</span>
+                        <span className="sidebar-normal">Cambio Contraseña</span>
                       </a>
                     </li>
                   </Nav>
@@ -230,8 +231,9 @@ let linkPropTypes = {
 
 Sidebar.defaultProps = {
   image: "",
-  background: "black",
+  background: "red",
   routes: [],
+
 };
 
 Sidebar.propTypes = {
@@ -240,11 +242,12 @@ Sidebar.propTypes = {
   background: PropTypes.oneOf([
     "black",
     "azure",
-    "green",
-    "orange",
+    "PaleGoldenrod",
+    "LightSalmon",
     "red",
-    "purple",
+    "Lavender",
   ]),
+  empleado: PropTypes.string,
   routes: PropTypes.arrayOf(
     PropTypes.oneOfType([
       PropTypes.shape({

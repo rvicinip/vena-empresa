@@ -30,24 +30,41 @@ import image2 from "assets/img/full-screen-image-2.jpg";
 import image3 from "assets/img/full-screen-image-3.jpg";
 import image4 from "assets/img/full-screen-image-4.jpg";
 
+
+
 function Empresa() {
   const [sidebarImage, setSidebarImage] = React.useState(image3);
   const [sidebarBackground, setSidebarBackground] = React.useState("red");
 
-  
+
+  const empleado = {
+    id_usuario: "12345678",
+    clave: "$2b$12$LbAzbm  07kLO/VXFKj732aePhMjfo9NcjFQyITQpuz0Rj8s6cHZbEe",
+    nombre: "Isabel Escobar",
+    salario: 3125000,
+    jornada: "Diurna",
+    email: "isabel@vitt.co",
+    cargo: "Gerente",
+    empresa: "60155c7052eab65a94b04d10",
+    perfil: "consult",
+    estado: "A",
+    codigo: 711768,
+  };
+
+  console.log  ("Nombre Empleado", empleado.nombre)
+  const nombreEmpleado= empleado.nombre
+ 
   const getRoutes = (routes) => {
-    console.log("Entro?");
+
     let arreglo = []
     return routes.map((prop, key) => {
       if (prop.collapse) {
         return getRoutes(prop.views);
       }
       if (prop.layout === "/empresa") {
-        arreglo.push(prop)
-        console.log("Este es el arreglo: ",arreglo,prop)
         return (
           <Route
-            path={prop.layout + prop.path}
+            path={prop.layout + prop.path} 
             key={key}
             component={prop.component}
           />
@@ -61,7 +78,7 @@ function Empresa() {
   function filtradoRutas (routes) {
     let arreglo = []
     routes.map((prop, key) => {
-      if (prop.layout === "/empresa") {
+      if (prop.layout === "/empresa" && prop.tablero) {
         arreglo.push(prop)
       } 
     });
@@ -73,6 +90,7 @@ function Empresa() {
     <>
       <div className="wrapper">
         <Sidebar
+          empleado={nombreEmpleado}
           routes={rutasFiltradas}
           image={sidebarImage}
           background={sidebarBackground}
@@ -82,13 +100,6 @@ function Empresa() {
           <div className="content">
             <Switch>{getRoutes(routes)}</Switch>
           </div>
-          <EmpresaFooter />
-          <div
-            className="close-layer"
-            onClick={() =>
-              document.documentElement.classList.toggle("nav-open")
-            }
-          />
         </div>
       </div>
       <FixedPlugin
