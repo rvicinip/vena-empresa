@@ -18,7 +18,7 @@ import {
   Collapse,
 } from "react-bootstrap";
 
-function ConsultorNavbar() {
+function EmpresaNavbar() {
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   return (
     <>
@@ -219,4 +219,4 @@ function ConsultorNavbar() {
   );
 }
 
-export default ConsultorNavbar;
+export default EmpresaNavbar;

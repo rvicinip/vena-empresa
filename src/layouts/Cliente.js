@@ -32,7 +32,8 @@ import image4 from "assets/img/full-screen-image-4.jpg";
 
 function Cliente() {
   const [sidebarImage, setSidebarImage] = React.useState(image3);
-  const [sidebarBackground, setSidebarBackground] = React.useState("black");
+  const [sidebarBackground, setSidebarBackground] = React.useState("red");
+
   const getRoutes = (routes) => {
     return routes.map((prop, key) => {
       if (prop.collapse) {
@@ -40,14 +41,14 @@ function Cliente() {
       }
 
       if (prop.layout === "/cliente") {
-        return (
+          return (
           <div>
           <Route
             path={prop.layout + prop.path}
             key={key}
             component={prop.component}
           />
-          <h5>MUESTRELO!!!!!!!!!!!{prop.layout}{prop.path}</h5>
+
           </div>
         );
       } else {
@@ -55,11 +56,22 @@ function Cliente() {
       }
     });
   };
+  function filtradoRutas (routes) {
+    let arreglo = []
+    routes.map((prop, key) => {
+      if (prop.layout === "/cliente") {
+        arreglo.push(prop)
+      } 
+    });
+    return arreglo
+  }; 
+  const rutasFiltradas = filtradoRutas(routes)
+
   return (
     <>
       <div className="wrapper">
         <Sidebar
-          routes={routes}
+          routes={rutasFiltradas}
           image={sidebarImage}
           background={sidebarBackground}
         />

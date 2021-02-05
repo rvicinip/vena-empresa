@@ -22,14 +22,15 @@ import {
 function Sidebar({ routes, image, background }) {
   // to check for active links and opened collapses
   let location = useLocation();
-  console.log("Esta es la localizacion del archivo:",location );
+  console.log("Entro a Sidebar",routes)
+ 
   // this is for the user collapse
   const [userCollapseState, setUserCollapseState] = React.useState(false);
   // this is for the rest of the collapses
   const [state, setState] = React.useState({});
   React.useEffect(() => {
     setState(getCollapseStates(routes));
-    console.log("Los estados de las rutas.. primero supongo los padres-collapsed",routes,"Estado",state);
+
   }, []);
   // this creates the intial state of this component based on the collapse routes
   // that it gets through routes prop
@@ -234,6 +235,7 @@ Sidebar.defaultProps = {
 };
 
 Sidebar.propTypes = {
+  filter: PropTypes.string,
   image: PropTypes.string,
   background: PropTypes.oneOf([
     "black",

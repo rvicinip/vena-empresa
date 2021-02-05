@@ -1,4 +1,6 @@
-import React from "react";
+
+import React, { useState, useEffect, useRef } from "react";
+import {Link} from 'react-router-dom'
 
 // react-bootstrap components
 import {
@@ -11,15 +13,25 @@ import {
   Container,
   Col,
 } from "react-bootstrap";
+import { isNullishCoalesce } from "typescript";
 
 function LoginCliente() {
   const [cardClasses, setCardClasses] = React.useState("card-hidden");
+
   React.useEffect(() => {
+
+
     setTimeout(function () {
       setCardClasses("");
     }, 1000);
   });
-  console.log("ENTRO AL LOGIN");
+
+  
+  const goTo = () => {
+      console.log("Entra a goTo", routes);
+      return <Link to="/cliente/dashboard-cliente"/>;
+  }; 
+
   return (
  
     <>
@@ -65,7 +77,8 @@ function LoginCliente() {
                     </Card.Body>
                   </Card.Body>
                   <Card.Footer className="ml-auto mr-auto">
-                    <Button className="btn-wd" type="submit" variant="warning">
+                    <Button className="btn-wd" type="submit" variant="warning" onClick={goTo}
+                     >
                       Continuar
                     </Button>
                   </Card.Footer>

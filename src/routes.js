@@ -11,6 +11,8 @@ import Inicio from "components/Inicio.js";
 import Registro from "views/Pages/Registro.js";
 import CapturaTiempos from "components/CapturaTiempos.js";
 
+import Cliente from "layouts/Cliente.js"
+
 var routes = [ 
   {
     path: "/login-cliente",
@@ -31,7 +33,7 @@ var routes = [
     layout: "/cliente",
     name: "Menu Actividades",
     icon: "pi pi-fw pi-home",
-    component: Dashboard,
+    component: Cliente,
   },  
   {
     path: "/seleccion-actividades",
@@ -71,7 +73,7 @@ var routes = [
   {
     path: "/dashboard-gerencia",
     layout: "/gerencia",
-    name: "TableroGerencia",
+    name: "Tablero Gerencia",
     icon: "nc-icon nc-chart-pie-35",
     component: Dashboard,
   },
@@ -89,46 +91,44 @@ var routes = [
     icon: "pi pi-fw pi-users",
     component: Dashboard,
   },
-  
   {
     path: "/login-empresa",
-    layout: "/consultor",
+    layout: "/empresa",
     name: "Login Empresa",
     icon: "nc-icon nc-circle-09",
     component: LoginEmpresa,
   },
   {
     path: "/cambio-clave",
-    layout: "/consultor",
+    layout: "/empresa",
     name: "Cambio Contraseñas",
     icon: "nc-icon nc-lock-circle-open",
     component: CambioClave,
   },
   {
-    path: "/registro-consultor",
-    layout: "/consultor",
-    name: "Registro Consultor",
+    path: "/registro-empresa",
+    layout: "/empresa",
+    name: "Registro empresa",
     icon: "nc-icon nc-chart-pie-35",
     component: Registro ,
   },  
-
   {
     path: "/tabla-personal",
-    layout: "/consultor",
+    layout: "/empresa",
     name: "Personal",
     icon: "pi pi-fw pi-users",
     component: Personal,
   },
   {
     path: "/info-empresa",
-    layout: "/consultor",
+    layout: "/empresa",
     name: "Info Empresa",
     icon: "pi pi-fw pi-sitemap",
     component: Dashboard,
   },
   {
     path: "/cierre-empresa",
-    layout: "/consultor",
+    layout: "/empresa",
     name: "Cierre Empresa",
     icon: "pi pi-fw pi-check-circle",
     component: Dashboard,

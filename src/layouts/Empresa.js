@@ -18,8 +18,8 @@ import {
 
 // core components
 import Sidebar from "components/Sidebar/Sidebar.js";
-import ConsultorNavbar from "components/Navbars/ConsultorNavbar.js";
-import ConsultorFooter from "components/Footers/ConsultorFooter.js";
+import EmpresaNavbar from "components/Navbars/EmpresaNavbar.js";
+import EmpresaFooter from "components/Footers/EmpresaFooter.js";
 import FixedPlugin from "components/FixedPlugin/FixedPlugin.js";
 
 // dinamically create dashboard routes
@@ -30,15 +30,21 @@ import image2 from "assets/img/full-screen-image-2.jpg";
 import image3 from "assets/img/full-screen-image-3.jpg";
 import image4 from "assets/img/full-screen-image-4.jpg";
 
-function Consultor() {
+function Empresa() {
   const [sidebarImage, setSidebarImage] = React.useState(image3);
-  const [sidebarBackground, setSidebarBackground] = React.useState("black");
+  const [sidebarBackground, setSidebarBackground] = React.useState("red");
+
+  
   const getRoutes = (routes) => {
+    console.log("Entro?");
+    let arreglo = []
     return routes.map((prop, key) => {
       if (prop.collapse) {
         return getRoutes(prop.views);
       }
-      if (prop.layout === "/consultor") {
+      if (prop.layout === "/empresa") {
+        arreglo.push(prop)
+        console.log("Este es el arreglo: ",arreglo,prop)
         return (
           <Route
             path={prop.layout + prop.path}
@@ -51,20 +57,32 @@ function Consultor() {
       }
     });
   };
+
+  function filtradoRutas (routes) {
+    let arreglo = []
+    routes.map((prop, key) => {
+      if (prop.layout === "/empresa") {
+        arreglo.push(prop)
+      } 
+    });
+    return arreglo
+  }; 
+  const rutasFiltradas = filtradoRutas(routes)
+
   return (
     <>
       <div className="wrapper">
         <Sidebar
-          routes={routes}
+          routes={rutasFiltradas}
           image={sidebarImage}
           background={sidebarBackground}
         />
         <div className="main-panel">
-          <ConsultorNavbar />
+          <EmpresaNavbar />
           <div className="content">
             <Switch>{getRoutes(routes)}</Switch>
           </div>
-          <ConsultorFooter />
+          <EmpresaFooter />
           <div
             className="close-layer"
             onClick={() =>
@@ -92,4 +110,4 @@ function Consultor() {
   );
 }
 
-export default Consultor;
+export default Empresa;
