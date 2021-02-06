@@ -16,7 +16,7 @@ import { Button } from "primereact/button";
 //import { Toast } from 'primereact/toast';
 import { ServicioPersonal } from "../services/ServicioPersonal";
 import { InputText } from "primereact/inputtext";
-import { Dialog } from 'primereact/dialog';
+
 
 //import { Rating } from 'primereact/rating';
 //import { Toast } from 'primereact/toast';
@@ -234,7 +234,7 @@ export const Personal = () => {
                     <Column field="Jornada" header="Hrs" headerStyle={{ width: "40px" }} sortable body={jornadaBodyTemplate}></Column>
                     <Column field="TipoJornada" header="Tipo  Jorn" headerStyle={{ width: "70px" }} sortable body={tipoJornadaBodyTemplate}></Column>
                     <Column field="email" header="Correo Electrónico" headerStyle={{ width: "230px" }} sortable body={emailBodyTemplate}></Column>
-                    <Column field="CentroCostos" header="Centro Costos" headerStyle={{ width: "150px" }} sortable body={centroCostosBodyTemplate}></Column>
+                    <Column field="CentroCostos" header="CCostos" headerStyle={{ width: "150px" }} sortable body={centroCostosBodyTemplate}></Column>
                     <Column field="Termino" header="Término" headerStyle={{ width: "90px" }} sortable body={terminoBodyTemplate}></Column>
                     <Column field="cargo" header="Cargo" headerStyle={{ width: "150px" }} sortable body={cargoBodyTemplate}></Column>
                 </DataTable>

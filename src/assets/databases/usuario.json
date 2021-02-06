@@ -1,0 +1,1754 @@
+[{
+  "_id": {
+    "$oid": "601575771a74ac9e08ff723f"
+  },
+  "id_usuario": "12345678",
+  "clave": "$2b$12$dxmV4Dmt.3Yy.Li7tnx0QOPPBQ4.tkrbkECO1ClzOlIV8vzwTWbCa",
+  "nombre": "Isabel Escobar",
+  "salario": 3125000,
+  "jornada": "Diurna",
+  "email": "isabel@vitt.co",
+  "cargo": "Gerente",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "consult",
+  "estado": "A",
+  "codigo": 0
+},{
+  "_id": {
+    "$oid": "601c3c0487f4a01b6ad64727"
+  },
+  "id_usuario": 71788316,
+  "clave": "$2b$12$hgWJLgwtR6Q2H9aN.bF5pusyZWDrT4BihqkqqdyxrR.pvGW0hyMVq",
+  "nombre": "Alvaro Velasquez",
+  "salario": 2500000,
+  "jornada": "Diurna",
+  "email": "avelasquez@venaycia.com",
+  "cargo": "Gerente Consultoria",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601c3c0787f4a01b6ad6472a"
+  },
+  "id_usuario": 32256494,
+  "clave": "$2b$12$WBYWWw7rnqDJhhEm6rL15./y0/h1eP.Z8Ag/HPuy5X85imJT4iF9q",
+  "nombre": "Isabel Narajo",
+  "salario": 1500000,
+  "jornada": "Diurna",
+  "email": "inaranjo@venaycia.com",
+  "cargo": "Administrativa",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601c3c0987f4a01b6ad6472d"
+  },
+  "id_usuario": 43221806,
+  "clave": "$2b$12$nIFqxcUg19sZ8LAXCAoc1ODVhBeDdsvf1p2Z5a/wvDnRV4.rIjju2",
+  "nombre": "Natalia Ramirez",
+  "salario": 2000000,
+  "jornada": "Diurna",
+  "email": "nramirez@venaycia.com",
+  "cargo": "Consultora Senior",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601c3c0b87f4a01b6ad64730"
+  },
+  "id_usuario": 1017136558,
+  "clave": "$2b$12$KvWVPOs4HgDgrUnBKRLGBuixqOuGiWUyu6xvpg1tP/HEprjihQE8u",
+  "nombre": "Manuela Rodriguez",
+  "salario": 1800000,
+  "jornada": "Diurna",
+  "email": "mrodriguez@venaycia.com",
+  "cargo": "Consultora Junior",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601c3c0d87f4a01b6ad64733"
+  },
+  "id_usuario": 8358473,
+  "clave": "$2b$12$k0lTXTKEv0JDK/kDtlX1Lu6.FSKStxu2SXrh9NQ1rERNsgg2XGBo2",
+  "nombre": "Juan Chavarriaga",
+  "salario": 1500000,
+  "jornada": "Diurna",
+  "email": "jchavarriaga@venaycia.com",
+  "cargo": "Consultora Junior",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601c3c1087f4a01b6ad64736"
+  },
+  "id_usuario": 43874999,
+  "clave": "$2b$12$dXyXjFja2moTivZxJBDLLeQO03WalidggM2Pk64JeaX0xgB8M6ZDu",
+  "nombre": "Catalina Rave",
+  "salario": 2000000,
+  "jornada": "Diurna",
+  "email": "crave@venaycia.com",
+  "cargo": "Consultora Senior",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601c3c1287f4a01b6ad64739"
+  },
+  "id_usuario": 1017175942,
+  "clave": "$2b$12$piGSgJ09DUeD3qPjxylY2.ncaHrcdHbokVnEkY1vVGicD570z59ei",
+  "nombre": "Luisa Hoyos",
+  "salario": 1500000,
+  "jornada": "Diurna",
+  "email": "lhoyos@venaycia.com",
+  "cargo": "Consultora Junior",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d417afd1a472d9e062724"
+  },
+  "id_usuario": 37100,
+  "clave": "$2b$12$JSGnwehF9eBO.2dYOqxEf.Ez8SIcRZIAWNuizL/zQc2iewrN4Fzmm",
+  "nombre": "Abraham Ballesteros Botello",
+  "salario": 4180000,
+  "jornada": "Nocturna",
+  "email": "AbrahamBallesteros.Botello@hotmail.com",
+  "cargo": "Consultor 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d417cfd1a472d9e062727"
+  },
+  "id_usuario": 37176,
+  "clave": "$2b$12$RVnjY9Nkl/752pahjyei6.bu/sWHJxvo9TtgEc38RLPjdTFSjl48.",
+  "nombre": "Myriam Orozco",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "MyriamOrozco@hotmail.com",
+  "cargo": "Consultor Asociado",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d417efd1a472d9e06272a"
+  },
+  "id_usuario": 38036,
+  "clave": "$2b$12$I1pobdCy.0iNneKj2aKCGOnYXq7C3wktkOstGA9F4UBxMxWy62JlO",
+  "nombre": "Dionisio Ortega Rubio",
+  "salario": 4180000,
+  "jornada": "Nocturna",
+  "email": "DionisioOrtega.Rubio@hotmail.com",
+  "cargo": "Consultor Asociado",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d4181fd1a472d9e06272d"
+  },
+  "id_usuario": 60331,
+  "clave": "$2b$12$fjwehELx.9hmX97/sAXjEOarD0K54XDL8X3630Of06kfSiRafesey",
+  "nombre": "Paola Acuña",
+  "salario": 4180000,
+  "jornada": "Diurna",
+  "email": "PaolaAcuña@hotmail.com",
+  "cargo": "Consultor Asociado",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d4183fd1a472d9e062730"
+  },
+  "id_usuario": 93958,
+  "clave": "$2b$12$21aVpJYk1EZk1W3K4/PevO0S5xf9K0crZyCSqF9YXTLAR4jmvulJC",
+  "nombre": "Melia Adarme",
+  "salario": 4180000,
+  "jornada": "Nocturna",
+  "email": "MeliaAdarme@hotmail.com",
+  "cargo": "Consultor Asociado",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d4185fd1a472d9e062733"
+  },
+  "id_usuario": 96444,
+  "clave": "$2b$12$3V0KJH9RCLM8BEqE/uddmef00ElLh1TBRwdGz4XNSRmW3uLV.v.zW",
+  "nombre": "Nataly Orozco",
+  "salario": 4180000,
+  "jornada": "Diurna",
+  "email": "NatalyOrozco@hotmail.com",
+  "cargo": "Consultor Asociado",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d4188fd1a472d9e062736"
+  },
+  "id_usuario": 359176,
+  "clave": "$2b$12$0udufEKjtguah9yVTiCln.Fhq29R4GEBxd9IncspREqvhh0NusXt.",
+  "nombre": "Camen Alicia Figueroa N",
+  "salario": 4180000,
+  "jornada": "Diurna",
+  "email": "Camen.AliciaFigueroa.N@hotmail.com",
+  "cargo": "Consultor Asociado",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d418afd1a472d9e062739"
+  },
+  "id_usuario": 361700,
+  "clave": "$2b$12$N/V98WucZEYCfmrsMRw9iOWHKjaXZIxUnJj404jGQcOaN5YmP2qA6",
+  "nombre": "Diogenes Arguelles Suarez",
+  "salario": 4180000,
+  "jornada": "Diurna",
+  "email": "DiogenesArguelles.Suarez@hotmail.com",
+  "cargo": "Consultor Asociado",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d418cfd1a472d9e06273c"
+  },
+  "id_usuario": 361775,
+  "clave": "$2b$12$RZlMLIAcpmuDcHnzqCqh.uYTAoTLYDyMpuUTEwxip5Goal.JZVS8W",
+  "nombre": "Paola Orozco",
+  "salario": 4180000,
+  "jornada": "Diurna",
+  "email": "PaolaOrozco@hotmail.com",
+  "cargo": "Consultor Asociado",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d418ffd1a472d9e06273f"
+  },
+  "id_usuario": 362636,
+  "clave": "$2b$12$SyAnxki88Y1mtuZgAFGa/eacAgu7fNVDVlcWfn6G1Fuuht.MCELUO",
+  "nombre": "Abel  Bautista",
+  "salario": 4180000,
+  "jornada": "Diurna",
+  "email": "Abel.Bautista@hotmail.com",
+  "cargo": "Consultor Asociado",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d4191fd1a472d9e062742"
+  },
+  "id_usuario": 382235,
+  "clave": "$2b$12$UB.f3LDyPXyUn/Sce.Oe2Ow8cYxjM5MAZdZG3O932p04fmPkRrrzu",
+  "nombre": "Martha Adarmes",
+  "salario": 4180000,
+  "jornada": "Diurna",
+  "email": "MarthaAdarmes@hotmail.com",
+  "cargo": "Consultor Asociado",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d4193fd1a472d9e062745"
+  },
+  "id_usuario": 413764,
+  "clave": "$2b$12$0/TyoqXLtYQvejVWiuhGJ.wLgi4GFxnallOy7XNEwHWg1451nI6tO",
+  "nombre": "Adelia Afanador",
+  "salario": 4180000,
+  "jornada": "Nocturna",
+  "email": "AdeliaAfanador@hotmail.com",
+  "cargo": "Consultor Asociado",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d4195fd1a472d9e062748"
+  },
+  "id_usuario": 417300,
+  "clave": "$2b$12$I4zNg5oinDDpvrdzygXMz.a3/UXggAdeNrqjgtVcP/R9OM./ZY64C",
+  "nombre": "Abraham Sierra",
+  "salario": 4180000,
+  "jornada": "Diurna",
+  "email": "AbrahamSierra@hotmail.com",
+  "cargo": "Consultor Asociado",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d4198fd1a472d9e06274b"
+  },
+  "id_usuario": 417327,
+  "clave": "$2b$12$/zJo33g6Af.Gv.Hvq4wNTeb21CBX7jo6a9F8RZEjygJBFEhN7XQzC",
+  "nombre": "Tatiana Orozco",
+  "salario": 2900000,
+  "jornada": "Nocturna",
+  "email": "TatianaOrozco@hotmail.com",
+  "cargo": "Asistente Administrativo 2",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d419afd1a472d9e06274e"
+  },
+  "id_usuario": 418236,
+  "clave": "$2b$12$sVMAkXebRgpkC33sMZFefu4SR.HFnEoLrU4ehqNGnYZE/OGI8Fh1S",
+  "nombre": "Abel  Villamizar",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "Abel.Villamizar@hotmail.com",
+  "cargo": "Asistente Administrativo 2",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d419dfd1a472d9e062751"
+  },
+  "id_usuario": 443782,
+  "clave": "$2b$12$.FIRXz/5f.L3bCEbTrxyKOvqSViVZ8T8ASMqPpetqGZnK2Y4Z2CbK",
+  "nombre": "Sandra Orozco ",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "SandraOrozco@hotmail.com",
+  "cargo": "Asistente Administrativo 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d419ffd1a472d9e062754"
+  },
+  "id_usuario": 481958,
+  "clave": "$2b$12$EcmZNnLjI5i6RMjCnQ65W.8X9AnCGOKPh8YvB7YG0NLgoRsxKzQaC",
+  "nombre": "Teresa Jaimes",
+  "salario": 1350000,
+  "jornada": "Diurna",
+  "email": "TeresaJaimes@hotmail.com",
+  "cargo": "Asistente Junior",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41a1fd1a472d9e062757"
+  },
+  "id_usuario": 518817,
+  "clave": "$2b$12$lIvxV.KwbJ5JN1NxEoXWdOmiyVBxNiEtevKfL9llnF5c7K/qUSzdm",
+  "nombre": "Margarita Orozco Caceres",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "MargaritaOrozco.Caceres@hotmail.com",
+  "cargo": "Operario 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41a3fd1a472d9e06275a"
+  },
+  "id_usuario": 564961,
+  "clave": "$2b$12$HYFDfVOj.gEcDLDFNaPIIOYmbo3YWs9bFDbWo6Gi3/tF39DLnUNVu",
+  "nombre": "Olga Lucia Fitzgerald",
+  "salario": 1900000,
+  "jornada": "Diurna",
+  "email": "Olga.LuciaFitzgerald@hotmail.com",
+  "cargo": "Vendedor",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41a6fd1a472d9e06275d"
+  },
+  "id_usuario": 572042,
+  "clave": "$2b$12$myPYFJKyWxBxBGhn1wf8wOIN8q0F3HJSl9Ye9cdb/LObQDdLP8j9m",
+  "nombre": "Maria Helena  Flechas",
+  "salario": 1900000,
+  "jornada": "Diurna",
+  "email": "Maria.Helena.Flechas@hotmail.com",
+  "cargo": "Vendedor",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41a8fd1a472d9e062760"
+  },
+  "id_usuario": 573651,
+  "clave": "$2b$12$rV6/302dkXtWi3EUOoNHYuI6cUuoEMVqVojZN8ffbO7OYvZTq73T.",
+  "nombre": "Alirio Afanador",
+  "salario": 2500000,
+  "jornada": "Diurna",
+  "email": "AlirioAfanador@hotmail.com",
+  "cargo": "Asistente Administrativo 2",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41aafd1a472d9e062763"
+  },
+  "id_usuario": 594709,
+  "clave": "$2b$12$fUyuoWTiqzzblh6g2myux.OBPmCrkEGUvXWjePCmwXX5UEwylXmQy",
+  "nombre": "Ana Isabel Ortega",
+  "salario": 2350000,
+  "jornada": "Diurna",
+  "email": "Ana.IsabelOrtega@hotmail.com",
+  "cargo": "Operario 3",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41adfd1a472d9e062766"
+  },
+  "id_usuario": 606081,
+  "clave": "$2b$12$GZu8QJgWuMAMRY1Fw3GE0OYBYnYGFqZXWv7VPCEYp47d8BzvbGdcO",
+  "nombre": "Yolanda Jaimes",
+  "salario": 1350000,
+  "jornada": "Diurna",
+  "email": "YolandaJaimes@hotmail.com",
+  "cargo": "Asistente Junior",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41b0fd1a472d9e06276a"
+  },
+  "id_usuario": 623204,
+  "clave": "$2b$12$zZYanaJq39NFaG/W1uCTkOlHLplYaWENsou4Ygw8Ruba3Y96lWBTq",
+  "nombre": "Maria Alejandra Afanador",
+  "salario": 1450000,
+  "jornada": "Nocturna",
+  "email": "Maria.AlejandraAfanador@hotmail.com",
+  "cargo": "Operario Aprendiz",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41b3fd1a472d9e06276d"
+  },
+  "id_usuario": 693004,
+  "clave": "$2b$12$5ysYrHmhiqhC5HmNel/6ue.UjPbfh54h110WpSRlBJFxghfjswK/W",
+  "nombre": "Silvia Afanador",
+  "salario": 1450000,
+  "jornada": "Nocturna",
+  "email": "SilviaAfanador@hotmail.com",
+  "cargo": "Operario Aprendiz",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41b5fd1a472d9e062770"
+  },
+  "id_usuario": 717383,
+  "clave": "$2b$12$KKygJQtXNHxTRtXedq3gEORIE68JB9JNLNrIlVPqNVDEw0i1O8LxS",
+  "nombre": "Andrea Carina Ortega",
+  "salario": 2350000,
+  "jornada": "Diurna",
+  "email": "Andrea.CarinaOrtega@hotmail.com",
+  "cargo": "Operario 3",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41b7fd1a472d9e062773"
+  },
+  "id_usuario": 762242,
+  "clave": "$2b$12$rdxSNpQODax66ajbg2fqIOYbTGNx1AeWgKy0bfiOQ3ndn8GGasbSm",
+  "nombre": "Carmen Ortega",
+  "salario": 2350000,
+  "jornada": "Diurna",
+  "email": "CarmenOrtega@hotmail.com",
+  "cargo": "Operario 3",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41b9fd1a472d9e062776"
+  },
+  "id_usuario": 768700,
+  "clave": "$2b$12$WxrIImyPb4zxNFkQgznjwuOAKGoN6srC7X3CkgFjuVhEB81IXDmDe",
+  "nombre": "Osman Correa Rincon",
+  "salario": 1450000,
+  "jornada": "Diurna",
+  "email": "OsmanCorrea.Rincon@hotmail.com",
+  "cargo": "Operario Aprendiz",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41bcfd1a472d9e062779"
+  },
+  "id_usuario": 768734,
+  "clave": "$2b$12$TApBKbDvwQPoNRquj2XzUOti5O6R7voF4ZvKEJRSmwBuaAlOBokMu",
+  "nombre": "Deyanira Ortega",
+  "salario": 2700000,
+  "jornada": "Diurna",
+  "email": "DeyaniraOrtega@hotmail.com",
+  "cargo": "Operario 2",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41befd1a472d9e06277c"
+  },
+  "id_usuario": 769636,
+  "clave": "$2b$12$Zl87f5YzfKK/0wC75Dox7.wECZS5GbLc4gEMkDct.OFr9CxXMpvKm",
+  "nombre": "Abel  Ojeda",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "Abel.Ojeda@hotmail.com",
+  "cargo": "Operario 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41c0fd1a472d9e06277f"
+  },
+  "id_usuario": 770572,
+  "clave": "$2b$12$yN.OAi8wEOS0PIKmWkqPLO1zBJtQUGfXc0RBXAILzt6Mys2.q8JMC",
+  "nombre": "Osman Palma Parra",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "OsmanPalma.Parra@hotmail.com",
+  "cargo": "Operario 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41c3fd1a472d9e062782"
+  },
+  "id_usuario": 842235,
+  "clave": "$2b$12$nj1oUsye8FqbrwYUMSf1JOx1181qcG/kwb6ifExDXGTgZVuRPPgee",
+  "nombre": "Deysi Liliana  Ortega",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "Deysi.Liliana.Ortega@hotmail.com",
+  "cargo": "Operario 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41c5fd1a472d9e062785"
+  },
+  "id_usuario": 857806,
+  "clave": "$2b$12$XCvu9bXG//n2E9oC4y/sz.ZTDleJ0zikV7k1SKXAcaDtsnZIVpBii",
+  "nombre": "Andrea Afanador Bautista",
+  "salario": 2500000,
+  "jornada": "Diurna",
+  "email": "AndreaAfanador.Bautista@hotmail.com",
+  "cargo": "Asistente Administrativo 2",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41c7fd1a472d9e062788"
+  },
+  "id_usuario": 969996,
+  "clave": "$2b$12$yCcJq1./a7miJ0hT1XcakOICkwFOew1.XAYJ5R6JWVhmH.e8V4jaq",
+  "nombre": "Yojana Flechas",
+  "salario": 2300000,
+  "jornada": "Diurna",
+  "email": "YojanaFlechas@hotmail.com",
+  "cargo": "Supervisor",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41cafd1a472d9e06278b"
+  },
+  "id_usuario": 1387524,
+  "clave": "$2b$12$DEz7d1za8nf2PGFeOV60XOlXQsG7nR6ZEMtxitADPJob0Qs7e89tK",
+  "nombre": "Claudia Africano",
+  "salario": 1800000,
+  "jornada": "Diurna",
+  "email": "ClaudiaAfricano@hotmail.com",
+  "cargo": "Asistente Administrativo 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41ccfd1a472d9e06278e"
+  },
+  "id_usuario": 1447800,
+  "clave": "$2b$12$gN2fA0mszHWlOYh/shd4ZO0b6pSc0VBqMzPDwZXOVAeBp2kiWzWhi",
+  "nombre": "Abelardo Moreno",
+  "salario": 1450000,
+  "jornada": "Diurna",
+  "email": "AbelardoMoreno@hotmail.com",
+  "cargo": "Operario Aprendiz",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41cefd1a472d9e062791"
+  },
+  "id_usuario": 1447881,
+  "clave": "$2b$12$6VU9i7GdeHj6rlgr1DscdeAaNbhYgxCj6QLBEJHek9gOs/i2lWHOy",
+  "nombre": "Diana Ortega",
+  "salario": 2700000,
+  "jornada": "Diurna",
+  "email": "DianaOrtega@hotmail.com",
+  "cargo": "Operario 2",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41d1fd1a472d9e062794"
+  },
+  "id_usuario": 1448736,
+  "clave": "$2b$12$pySW7oJj3sJZkmWNTlRYmOpv2MA.7yTtcygdTBeXtPaRgJ18LmCa6",
+  "nombre": "Abdel Quintero",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "AbdelQuintero@hotmail.com",
+  "cargo": "Operario 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41d3fd1a472d9e062797"
+  },
+  "id_usuario": 1449672,
+  "clave": "$2b$12$gEn47kUPchnqzl5s6k5EpuEZWfbgGsnFZtL4b3SqmK0D7RZLYBvC6",
+  "nombre": "Abdon Pinzon",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "AbdonPinzon@hotmail.com",
+  "cargo": "Operario 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41d5fd1a472d9e06279a"
+  },
+  "id_usuario": 1508156,
+  "clave": "$2b$12$ZWtEldvBuJGERKOdt4mdr.Tv4esKLQY/QWpH.QneBz/Kc1ly7WVxS",
+  "nombre": "Yurevsoledad Flochas B.",
+  "salario": 2300000,
+  "jornada": "Diurna",
+  "email": "YurevsoledadFlochas.B@hotmail.com",
+  "cargo": "Supervisor",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41d8fd1a472d9e06279d"
+  },
+  "id_usuario": 1565382,
+  "clave": "$2b$12$xCf6eZumMA5.lMrzqUdY2uJ4kEWgNAfOrJkSmkyCcQA4.d.SSTzSy",
+  "nombre": "Ana Rosa Flor",
+  "salario": 2300000,
+  "jornada": "Diurna",
+  "email": "Ana.RosaFlor@hotmail.com",
+  "cargo": "Supervisor",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41e0fd1a472d9e0627a0"
+  },
+  "id_usuario": 1583277,
+  "clave": "$2b$12$cE2ChhiGD41hKBfPehyZQuUnz/ZtDetYgHPLIORz90xNM.VZUvzhS",
+  "nombre": "Ana Isabel Agro",
+  "salario": 1450000,
+  "jornada": "Nocturna",
+  "email": "Ana.IsabelAgro@hotmail.com",
+  "cargo": "Operario Aprendiz",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41e2fd1a472d9e0627a3"
+  },
+  "id_usuario": 1634905,
+  "clave": "$2b$12$ahkv4hsRT8.lQHz045Pw5edABJVVmJ/okz86JzNt6BMw2sRfr9WP.",
+  "nombre": "Beatriz Agudelo",
+  "salario": 1450000,
+  "jornada": "Nocturna",
+  "email": "BeatrizAgudelo@hotmail.com",
+  "cargo": "Operario Aprendiz",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41e4fd1a472d9e0627a6"
+  },
+  "id_usuario": 1994932,
+  "clave": "$2b$12$oXFLdWc9tCSgxSYpEexqUOLCJMUoRZ6oacexfKw2yy1Ag/uU1ejsS",
+  "nombre": "Daissy Agudelo",
+  "salario": 1250000,
+  "jornada": "Diurna",
+  "email": "DaissyAgudelo@hotmail.com",
+  "cargo": "Asistente Junior",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41e7fd1a472d9e0627a9"
+  },
+  "id_usuario": 2061345,
+  "clave": "$2b$12$vy4UWrFDP07j7EJx.Hive.XTYeciJ0c..qjbk2LPuAJDboHhCwdHm",
+  "nombre": "Claudia Flores",
+  "salario": 2300000,
+  "jornada": "Diurna",
+  "email": "ClaudiaFlores@hotmail.com",
+  "cargo": "Supervisor",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41e9fd1a472d9e0627ac"
+  },
+  "id_usuario": 2220285,
+  "clave": "$2b$12$wcQi5IH/AM990.Ym0cE/TeW6KLwL3CB4ix6RyvPDOfsDTh7SURzgS",
+  "nombre": "Eliana Ortega",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "ElianaOrtega@hotmail.com",
+  "cargo": "Operario 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41ebfd1a472d9e0627af"
+  },
+  "id_usuario": 2300315,
+  "clave": "$2b$12$QvcAdpZkcuk2S6f.Injv8OJiKAI2uB30oiMjKQRYQZ7ayZlXkkci.",
+  "nombre": "Erika Agudelo",
+  "salario": 1350000,
+  "jornada": "Diurna",
+  "email": "ErikaAgudelo@hotmail.com",
+  "cargo": "Asistente Junior",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41eefd1a472d9e0627b2"
+  },
+  "id_usuario": 2345258,
+  "clave": "$2b$12$P3xjkJsZ3tS.nXLG.D/3ae8hHSQbsJA0TWF0ioobc1cyGNTPw0NX6",
+  "nombre": "Elba Flores",
+  "salario": 1900000,
+  "jornada": "Diurna",
+  "email": "ElbaFlores@hotmail.com",
+  "cargo": "Vendedor",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41f0fd1a472d9e0627b5"
+  },
+  "id_usuario": 2704162,
+  "clave": "$2b$12$32liY4DM6ivtBqjvJCrlIuLskvcfIvJlP2PAkcmv8KOlGOYsf0eRu",
+  "nombre": "Maria Ofir Molano",
+  "salario": 2850000,
+  "jornada": "Diurna",
+  "email": "Maria.OfirMolano@hotmail.com",
+  "cargo": "Operario Técnico",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41f2fd1a472d9e0627b8"
+  },
+  "id_usuario": 2776028,
+  "clave": "$2b$12$fJZhUhqWsHYSfe3POvPileMZUUsPndsKN20FBt0UAZm0mglJ8q666",
+  "nombre": "Oscar Flores",
+  "salario": 2300000,
+  "jornada": "Diurna",
+  "email": "OscarFlores@hotmail.com",
+  "cargo": "Supervisor",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41f5fd1a472d9e0627bb"
+  },
+  "id_usuario": 2838690,
+  "clave": "$2b$12$YCZJpL2Oh93wI/IJxovKq.neSvWg4nXm/PmXkNTzCJio9A.aI.uTu",
+  "nombre": "Tatiana Flores",
+  "salario": 1900000,
+  "jornada": "Diurna",
+  "email": "TatianaFlores@hotmail.com",
+  "cargo": "Vendedor",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41f7fd1a472d9e0627be"
+  },
+  "id_usuario": 2911346,
+  "clave": "$2b$12$gnOQ97YNNM1W00Y7fQ0wuOMPirGyw2Qs6TXNIM5u2Pyw4qNOzj1Zi",
+  "nombre": "Heidi Agudelo",
+  "salario": 1800000,
+  "jornada": "Diurna",
+  "email": "HeidiAgudelo@hotmail.com",
+  "cargo": "Asistente Administrativo 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41f9fd1a472d9e0627c1"
+  },
+  "id_usuario": 3005268,
+  "clave": "$2b$12$0dchk9Mp/16L8u2tN0XFs.pLXJ3dReXeup7q38Sk40SJQBrbVYWMq",
+  "nombre": "Luis Hernando/Sandra Agudelo",
+  "salario": 1350000,
+  "jornada": "Diurna",
+  "email": "Luis.Hernando/SandraAgudelo@hotmail.com",
+  "cargo": "Asistente Junior",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41fcfd1a472d9e0627c4"
+  },
+  "id_usuario": 3009761,
+  "clave": "$2b$12$CHfZKQbdqSQocTuA11qw3uCQNYZTHxZ4xugFDQrrz0XaxKxrpa3sC",
+  "nombre": "Marian Camila Agudelo",
+  "salario": 1350000,
+  "jornada": "Diurna",
+  "email": "Marian.CamilaAgudelo@hotmail.com",
+  "cargo": "Asistente Junior",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d41fefd1a472d9e0627c7"
+  },
+  "id_usuario": 3030248,
+  "clave": "$2b$12$ijrIGpA6AUVQdw5K1FEqHOb62AZZds4U.9zTnIT/DWFSnWqSGtaXO",
+  "nombre": "Jhoanna Ortega",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "JhoannaOrtega@hotmail.com",
+  "cargo": "Operario 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d4200fd1a472d9e0627ca"
+  },
+  "id_usuario": 3034836,
+  "clave": "$2b$12$P1/0mlIvCnJrHrzijDpgyuCynWsIFIEX7CPRBrCET.n/0Klpsdh3O",
+  "nombre": "Martin  Flores Jaimes",
+  "salario": 2300000,
+  "jornada": "Diurna",
+  "email": "Martin.Flores.Jaimes@hotmail.com",
+  "cargo": "Supervisor",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d4202fd1a472d9e0627cd"
+  },
+  "id_usuario": 3067789,
+  "clave": "$2b$12$4D4YcyTrk7BQo98NIXJLJ.o1PY.HWth54zVTEPtT19C8uX8CdSj06",
+  "nombre": "Esther Maria Flores Santiago N S",
+  "salario": 1900000,
+  "jornada": "Diurna",
+  "email": "Esther.MariaFlores.Santiago.N.S@hotmail.com",
+  "cargo": "Vendedor",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d4205fd1a472d9e0627d0"
+  },
+  "id_usuario": 3077991,
+  "clave": "$2b$12$Wwc2fgXlGfT9tObegTitBuLioA.HWGiph4Zwdi8rdIC7eS4oobJhO",
+  "nombre": "Jimmy Ortega",
+  "salario": 4450000,
+  "jornada": "Diurna",
+  "email": "JimmyOrtega@hotmail.com",
+  "cargo": "Operario Especializado",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d4207fd1a472d9e0627d3"
+  },
+  "id_usuario": 3256854,
+  "clave": "$2b$12$1CityUqO28BejbSEf0Yxx.2fKCexXHI41W9iitaE1YLR9gfjVzrOK",
+  "nombre": "Marisol Agudelo",
+  "salario": 1450000,
+  "jornada": "Nocturna",
+  "email": "MarisolAgudelo@hotmail.com",
+  "cargo": "Operario Aprendiz",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},
+ {
+  "_id": {
+    "$oid": "601d48fefd1a472d9e063075"
+  },
+  "id_usuario": 27721415,
+  "clave": "$2b$12$z9RSF6uw16wAC0Tmx1s/buujmk6xnsd5d1V1vTvP20XLbxfU2zLEq",
+  "nombre": "Belsy Parra",
+  "salario": 2350000,
+  "jornada": "Diurna",
+  "email": "BelsyParra@hotmail.com",
+  "cargo": "Operario 3",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d4901fd1a472d9e063078"
+  },
+  "id_usuario": 27721536,
+  "clave": "$2b$12$LdDMPQfIB5c969WSAy2PYO2MayrAYY6Lfh3KKlQD9sIDY1ylswDjq",
+  "nombre": "Dionisio Bermudez",
+  "salario": 4180000,
+  "jornada": "Nocturna",
+  "email": "DionisioBermudez@hotmail.com",
+  "cargo": "Operario 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d4903fd1a472d9e06307b"
+  },
+  "id_usuario": 27722863,
+  "clave": "$2b$12$dYE2MF2iTx09c8U9SXEKme3wG6OXNO6xukYy1m7uTciQQ/6OXgeiq",
+  "nombre": "Sandra Aparicio",
+  "salario": 1250000,
+  "jornada": "Diurna",
+  "email": "SandraAparicio@hotmail.com",
+  "cargo": "Operario Aprendiz",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d4906fd1a472d9e06307e"
+  },
+  "id_usuario": 27727153,
+  "clave": "$2b$12$dqmwW2QrLXn.jA.V6afddeE04M2jRryJjkIDu6IxArD0aX6sZNGES",
+  "nombre": "Ana Mercedes Berbesi",
+  "salario": 1350000,
+  "jornada": "Diurna",
+  "email": "Ana.MercedesBerbesi@hotmail.com",
+  "cargo": "Asistente Junior",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d4908fd1a472d9e063081"
+  },
+  "id_usuario": 27727942,
+  "clave": "$2b$12$na7dywa7F5.S8Yh2nu2q/OTer08VtCo0kw6o1zna2f3GZmSFdM6Gu",
+  "nombre": "Rodrigo Lancheros Gomez",
+  "salario": 1350000,
+  "jornada": "Diurna",
+  "email": "RodrigoLancheros.Gomez@hotmail.com",
+  "cargo": "Asistente Junior",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d490afd1a472d9e063084"
+  },
+  "id_usuario": 27728307,
+  "clave": "$2b$12$3huNzLUB2nmNdbuJ3V9kxuqR1YU9cAlW1e8TSeQeyS8xF1eaVLN2m",
+  "nombre": "Yeli Apolinar",
+  "salario": 2500000,
+  "jornada": "Diurna",
+  "email": "YeliApolinar@hotmail.com",
+  "cargo": "Asistente Administrativo 2",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d490dfd1a472d9e063087"
+  },
+  "id_usuario": 27731300,
+  "clave": "$2b$12$JJwWZXJNQAh2ORcIgMizT.BazJsf.CMaC9U.XKaFIJrvHxxr/YHQa",
+  "nombre": "Abercio Velazquez",
+  "salario": 1450000,
+  "jornada": "Diurna",
+  "email": "AbercioVelazquez@hotmail.com",
+  "cargo": "Operario Aprendiz",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d490ffd1a472d9e06308a"
+  },
+  "id_usuario": 27731325,
+  "clave": "$2b$12$Z4ZNUqgQx289Ny8OYyNm6OAfp8W.iiZZDP6.YO129DUXXl13BcvO6",
+  "nombre": "Carmen Parra",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "CarmenParra@hotmail.com",
+  "cargo": "Operario 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d4911fd1a472d9e06308d"
+  },
+  "id_usuario": 27732087,
+  "clave": "$2b$12$idsJYRwvr8WOidEW0fNsUeeT9CHHl8lv0ZhWdQuTtmqyNkw6Ejwa2",
+  "nombre": "Astrid Leonor Aponte",
+  "salario": 1250000,
+  "jornada": "Diurna",
+  "email": "Astrid.LeonorAponte@hotmail.com",
+  "cargo": "Operario Aprendiz",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d4914fd1a472d9e063090"
+  },
+  "id_usuario": 27732153,
+  "clave": "$2b$12$yMh8l/SBkbrYPrP/aOQwuOaZWNDCy6j423nzOwjdCYQ/YjVXu9tYS",
+  "nombre": "Katherine Aponte",
+  "salario": 1350000,
+  "jornada": "Diurna",
+  "email": "KatherineAponte@hotmail.com",
+  "cargo": "Asistente Junior",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d4cc1fd1a472d9e063553"
+  },
+  "id_usuario": 33200336,
+  "clave": "$2b$12$q01R2A4POxYwhd0X8cNHiOSasSIb/AWuma.UQlC9RKzf3AVKuFb9m",
+  "nombre": "Abdallah Casanova",
+  "salario": 2350000,
+  "jornada": "Diurna",
+  "email": "AbdallahCasanova@hotmail.com",
+  "cargo": "Operario 3",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d4cc3fd1a472d9e063556"
+  },
+  "id_usuario": 33215405,
+  "clave": "$2b$12$o3rxDhJ7hWkzjXi/jcTW7eKWx3oEh7gH5rzGVkHrGgvPU9hgysndi",
+  "nombre": "Claudia Peñaranda",
+  "salario": 2350000,
+  "jornada": "Diurna",
+  "email": "ClaudiaPeñaranda@hotmail.com",
+  "cargo": "Operario 3",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d4cc5fd1a472d9e063559"
+  },
+  "id_usuario": 33217178,
+  "clave": "$2b$12$TNlgQgPPK5oq.G/bcLtO2uD340DRnSfQV.GTjYFRlC7eKlCKKgFWm",
+  "nombre": "Rosa Leal",
+  "salario": 1350000,
+  "jornada": "Diurna",
+  "email": "RosaLeal@hotmail.com",
+  "cargo": "Asistente Junior",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d4cc7fd1a472d9e06355c"
+  },
+  "id_usuario": 33368615,
+  "clave": "$2b$12$ab7CIfkl79MPeJVpfWF46OeweqkzZOWd6v0bceHWChSD4kaqiOD8u",
+  "nombre": "Cleidi Peñaranda",
+  "salario": 2350000,
+  "jornada": "Diurna",
+  "email": "CleidiPeñaranda@hotmail.com",
+  "cargo": "Operario 3",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d4ccbfd1a472d9e063562"
+  },
+  "id_usuario": 33369692,
+  "clave": "$2b$12$HS5SyKYcmwe1pM5EbRakBellQbyuic09amEAECB6oJq1bswpoyKw2",
+  "nombre": "Deyner Oslander Peñaranda",
+  "salario": 2350000,
+  "jornada": "Diurna",
+  "email": "Deyner.OslanderPeñaranda@hotmail.com",
+  "cargo": "Operario 3",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},
+{
+  "_id": {
+    "$oid": "601d5e7ffd1a472d9e064bf1"
+  },
+  "id_usuario": 60285982,
+  "clave": "$2b$12$kh2UwxMX58hzHapNU2TVQOPgKu8dDBPFc2gwix.QLIq6lNUdP4IjC",
+  "nombre": "Liseth Calderón",
+  "salario": 1350000,
+  "jornada": "Diurna",
+  "email": "LisethCalderón@hotmail.com",
+  "cargo": "Asistente Junior",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5e81fd1a472d9e064bf4"
+  },
+  "id_usuario": 60286000,
+  "clave": "$2b$12$IchdnlDUP3MCUKTE.8MNOeNKT7QX.rrgIzI/F/ZlySKYDGQtH8XMG",
+  "nombre": "Abelardo Quintero",
+  "salario": 1450000,
+  "jornada": "Diurna",
+  "email": "AbelardoQuintero@hotmail.com",
+  "cargo": "Operario Aprendiz",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5e83fd1a472d9e064bf7"
+  },
+  "id_usuario": 60286052,
+  "clave": "$2b$12$FSTXwR8khlYFFd4U9iLMJ.vYnUhevlQ8UUPe0lR1eK9mUX/yQhTjy",
+  "nombre": "Monica Robayo",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "MonicaRobayo@hotmail.com",
+  "cargo": "Operario 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5e87fd1a472d9e064bfb"
+  },
+  "id_usuario": 60286172,
+  "clave": "$2b$12$wLeMeiFWpTF6cazHR2nx7uQHq5UYxTOF6ce53TuPPJ8cZJ6U1DcPq",
+  "nombre": "Diogo Pinilla",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "DiogoPinilla@hotmail.com",
+  "cargo": "Operario 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5e89fd1a472d9e064bfe"
+  },
+  "id_usuario": 60286436,
+  "clave": "$2b$12$ZCudjhISwIo3XIBnkbBvneQboufMcAmd1pc/BLAj.BbKDJHuSRjMO",
+  "nombre": "Diogenes Acevedo",
+  "salario": 2350000,
+  "jornada": "Diurna",
+  "email": "DiogenesAcevedo@hotmail.com",
+  "cargo": "Operario 3",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5e8cfd1a472d9e064c01"
+  },
+  "id_usuario": 60286472,
+  "clave": "$2b$12$AsNfQ2hFIRdw3FpZyKSK0uas8LQyhcUvPHBAVv2kb2FS9xja.8FSW",
+  "nombre": "Alvin Beltran A",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "AlvinBeltran.A@hotmail.com",
+  "cargo": "Operario 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5e8efd1a472d9e064c04"
+  },
+  "id_usuario": 60286516,
+  "clave": "$2b$12$CoEeJ5K4V0oJrj8JleIGmOFyIUiQn6ZQPk2q1ocqbd2akVFiP5WPS",
+  "nombre": "Blanca Mirian Calderòn",
+  "salario": 1350000,
+  "jornada": "Diurna",
+  "email": "Blanca.MirianCalderòn@hotmail.com",
+  "cargo": "Asistente Junior",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5e91fd1a472d9e064c07"
+  },
+  "id_usuario": 60286700,
+  "clave": "$2b$12$CIj2nOTKBDyyqBJPf0jRUOMYjuGg0DdJV6sGQ0LS3u7CIWoKdkVnK",
+  "nombre": "Abel  Carrero",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "Abel.Carrero@hotmail.com",
+  "cargo": "Operario 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5e93fd1a472d9e064c0a"
+  },
+  "id_usuario": 60286702,
+  "clave": "$2b$12$oVO3HgE8nsJOvwyDQnSQI.kJf.7jLtzsun6u0LS/st53fsWDyGtMG",
+  "nombre": "Carmensa Robles",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "CarmensaRobles@hotmail.com",
+  "cargo": "Operario 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5e95fd1a472d9e064c0d"
+  },
+  "id_usuario": 60286936,
+  "clave": "$2b$12$wWTbag3wDDvvh4STxdcrZOwtQ5.Myt4D9oH5ax4Jk2ZhGaD8yrkaW",
+  "nombre": "Benancio Alzate",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "BenancioAlzate@hotmail.com",
+  "cargo": "Operario 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5e9afd1a472d9e064c10"
+  },
+  "id_usuario": 60286978,
+  "clave": "$2b$12$IkvDFVlg0N8JvYPMGt5auekH20pGcXvRpJduYZajv6OS4C.G2PI7O",
+  "nombre": "Maribel Garnica",
+  "salario": 1900000,
+  "jornada": "Diurna",
+  "email": "MaribelGarnica@hotmail.com",
+  "cargo": "Vendedor",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5e9dfd1a472d9e064c13"
+  },
+  "id_usuario": 60287096,
+  "clave": "$2b$12$73.6e8n97l19xc3r7g0cPulTuqaKl2VCdJ8qjFB9FBP5XmH12b9g6",
+  "nombre": "Cenobia Calderon Botello",
+  "salario": 2500000,
+  "jornada": "Diurna",
+  "email": "CenobiaCalderon.Botello@hotmail.com",
+  "cargo": "Asistente Administrativo 2",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5e9ffd1a472d9e064c16"
+  },
+  "id_usuario": 60287262,
+  "clave": "$2b$12$iRuwbk.0dk1T.XU7G/nnN.JOvgrxjqOM4MqVwuPGY8D7GMUqxy4Za",
+  "nombre": "Yuri Calderon Gamboa",
+  "salario": 1450000,
+  "jornada": "Nocturna",
+  "email": "YuriCalderon.Gamboa@hotmail.com",
+  "cargo": "Operario Aprendiz",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5ea1fd1a472d9e064c19"
+  },
+  "id_usuario": 60287293,
+  "clave": "$2b$12$j13XzwHTdmoen6BdqSQjd.A5gNSQYWrCv0LRRM352qrxJWwN7yAIi",
+  "nombre": "Sandra  Garnica",
+  "salario": 1900000,
+  "jornada": "Diurna",
+  "email": "Sandra.Garnica@hotmail.com",
+  "cargo": "Vendedor",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5ea4fd1a472d9e064c1c"
+  },
+  "id_usuario": 60287372,
+  "clave": "$2b$12$SRlttKqHRbb1fCS/EH0d1Oe5PAa6nQniuZx2/a/dd.CA5.PCXPLp2",
+  "nombre": "Abdallah Omaña",
+  "salario": 1450000,
+  "jornada": "Diurna",
+  "email": "AbdallahOmaña@hotmail.com",
+  "cargo": "Operario Aprendiz",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5ea6fd1a472d9e064c1f"
+  },
+  "id_usuario": 60287550,
+  "clave": "$2b$12$16hw3R/LBbgVy7kEB6/p8uJORftvJXSErfCdJUPfaSGOI8K6jkJ02",
+  "nombre": "Leidy Robles",
+  "salario": 2350000,
+  "jornada": "Diurna",
+  "email": "LeidyRobles@hotmail.com",
+  "cargo": "Operario 3",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5ea8fd1a472d9e064c22"
+  },
+  "id_usuario": 60287600,
+  "clave": "$2b$12$yLmKlaI3sA/Pqe7POL4G.eld/74/bj2lW9jxcgO5p5BM6yeM/qQ/y",
+  "nombre": "Abundio Amaya",
+  "salario": 1450000,
+  "jornada": "Diurna",
+  "email": "AbundioAmaya@hotmail.com",
+  "cargo": "Operario Aprendiz",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5eaafd1a472d9e064c25"
+  },
+  "id_usuario": 60287624,
+  "clave": "$2b$12$P9XRkNFo6iJ3M.S.B4pv4.uwmhD4D3OTdXxjOLYlFtzPF3oq6kA/m",
+  "nombre": "Clara Nataly Rocha",
+  "salario": 5850000,
+  "jornada": "Nocturna",
+  "email": "Clara.NatalyRocha@hotmail.com",
+  "cargo": "Operario Especializado",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5eacfd1a472d9e064c28"
+  },
+  "id_usuario": 60287636,
+  "clave": "$2b$12$mm6HfMBrMboyQ2F.m/B8AeNszwYdufVqHJlrbs.9tplPCW1sAD/fG",
+  "nombre": "Absalom Ballesteros Botello",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "AbsalomBallesteros.Botello@hotmail.com",
+  "cargo": "Operario 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5eaffd1a472d9e064c2b"
+  },
+  "id_usuario": 60287658,
+  "clave": "$2b$12$xpbCAhd8qNhKNHnpkOzrOuoNjcSWPHL54ZYN7FWxNYbslbzX4IL66",
+  "nombre": "Liliana Rocha",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "LilianaRocha@hotmail.com",
+  "cargo": "Operario 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5eb1fd1a472d9e064c2e"
+  },
+  "id_usuario": 60287728,
+  "clave": "$2b$12$1aq7SHLWLxGwerw2GADMUu/93NsQt7y2X5AltPIrAd5Xfd7pOI0Se",
+  "nombre": "Ema Calderon Sanchez",
+  "salario": 2500000,
+  "jornada": "Diurna",
+  "email": "EmaCalderon.Sanchez@hotmail.com",
+  "cargo": "Asistente Administrativo 2",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5eb3fd1a472d9e064c31"
+  },
+  "id_usuario": 60287777,
+  "clave": "$2b$12$O7EeSCbgSISsheFlKpq97.OS5nFolLwEXxsbXSMkNBDOtRUGUzula",
+  "nombre": "Zulay Garnica Galvis",
+  "salario": 1900000,
+  "jornada": "Diurna",
+  "email": "ZulayGarnica.Galvis@hotmail.com",
+  "cargo": "Vendedor",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5eb5fd1a472d9e064c34"
+  },
+  "id_usuario": 60287792,
+  "clave": "$2b$12$TrFyyZUtFYE8R7yXMTWEFujVS4oVf61sninzjlRswhpNZEhHqobca",
+  "nombre": "Claudia Garza",
+  "salario": 1900000,
+  "jornada": "Diurna",
+  "email": "ClaudiaGarza@hotmail.com",
+  "cargo": "Vendedor",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5eb8fd1a472d9e064c37"
+  },
+  "id_usuario": 60287900,
+  "clave": "$2b$12$rdpNLvqvy8U3Jcf34Vkjw.ksMBsxXNd1LYaGtXJ.F7OFf/NOVs5zy",
+  "nombre": "Benny Alarcon",
+  "salario": 2350000,
+  "jornada": "Diurna",
+  "email": "BennyAlarcon@hotmail.com",
+  "cargo": "Operario 3",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5ebafd1a472d9e064c3a"
+  },
+  "id_usuario": 60287934,
+  "clave": "$2b$12$RJ2iRp8HkGPJt4AtHdWWJOFCamrU6XPN1b6.kfoWNAbjJOiQ7oMoW",
+  "nombre": "Claudia Rochell",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "ClaudiaRochell@hotmail.com",
+  "cargo": "Operario 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5ebcfd1a472d9e064c3d"
+  },
+  "id_usuario": 60287964,
+  "clave": "$2b$12$r8Xd7jG3xQRUvX5yKo71hOAZGmyWcwKCfEy7ZIYUmw0jLTFRc89yG",
+  "nombre": "Claudia Rodiño",
+  "salario": 2350000,
+  "jornada": "Diurna",
+  "email": "ClaudiaRodiño@hotmail.com",
+  "cargo": "Operario 3",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5ebefd1a472d9e064c40"
+  },
+  "id_usuario": 60288079,
+  "clave": "$2b$12$D7veKASJit.m0CNIHHE0T.H0qPUUTCXrh5Hn.IcRkDmUeCuIP4Bbq",
+  "nombre": "Sandra Callejas",
+  "salario": 2800000,
+  "jornada": "Diurna",
+  "email": "SandraCallejas@hotmail.com",
+  "cargo": "Asistente Administrativo 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5ec1fd1a472d9e064c43"
+  },
+  "id_usuario": 60288100,
+  "clave": "$2b$12$bYF7ax3tJrb873bmwWrjW.DUxD1jWf8/NkEe7O8bAO36l6pHiwr5S",
+  "nombre": "Abraham Correa Rincon",
+  "salario": 1450000,
+  "jornada": "Diurna",
+  "email": "AbrahamCorrea.Rincon@hotmail.com",
+  "cargo": "Operario Aprendiz",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5ec3fd1a472d9e064c46"
+  },
+  "id_usuario": 60288127,
+  "clave": "$2b$12$Rr493hzFlJshvCjLX1g1x.Wlw9findnUffNIU/6.V.yWUNxnlvQte",
+  "nombre": "Sandra  Calvo Ojeda",
+  "salario": 1800000,
+  "jornada": "Diurna",
+  "email": "Sandra.Calvo.Ojeda@hotmail.com",
+  "cargo": "Asistente Administrativo 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5ec5fd1a472d9e064c49"
+  },
+  "id_usuario": 60288130,
+  "clave": "$2b$12$b4jHO3OaIlpAD/lzK1.yGeet6l83dK83dx5aevyr/ctyGdJuXH6BS",
+  "nombre": "Maria Lorena Rodrigez",
+  "salario": 2700000,
+  "jornada": "Diurna",
+  "email": "Maria.LorenaRodrigez@hotmail.com",
+  "cargo": "Operario 2",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5ec8fd1a472d9e064c4c"
+  },
+  "id_usuario": 60288148,
+  "clave": "$2b$12$n4K/I0yGCHfu0QsfGTgHhOfzvEJrlw23w/esSXP4M2Vh7fka8QRw6",
+  "nombre": "Ana Maria Calzada",
+  "salario": 2500000,
+  "jornada": "Diurna",
+  "email": "Ana.MariaCalzada@hotmail.com",
+  "cargo": "Asistente Administrativo 2",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5ecafd1a472d9e064c4f"
+  },
+  "id_usuario": 60288163,
+  "clave": "$2b$12$TRcNkFcDoNPq3ASt8F6zZu7qDIn.cGV4kT1vKWh0gzcXGcpz7Gq4K",
+  "nombre": "Carmen Camacho",
+  "salario": 1800000,
+  "jornada": "Diurna",
+  "email": "CarmenCamacho@hotmail.com",
+  "cargo": "Asistente Administrativo 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5eccfd1a472d9e064c52"
+  },
+  "id_usuario": 60288196,
+  "clave": "$2b$12$uJWVcUr75LY5SLr8tXT/zurUoBzbFBBtfnWVhuMCrSxwjf8ovXhs2",
+  "nombre": "1015440859 Rodriguez",
+  "salario": 2350000,
+  "jornada": "Diurna",
+  "email": "1015440859Rodriguez@hotmail.com",
+  "cargo": "Operario 3",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5ecffd1a472d9e064c55"
+  },
+  "id_usuario": 60288300,
+  "clave": "$2b$12$Jv8U9PhfSOdSiKawSN210O.ltmFWwRFLKWlwyF0DYH0XKoFZhxuAi",
+  "nombre": "Dionisio Morales",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "DionisioMorales@hotmail.com",
+  "cargo": "Operario 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5ed1fd1a472d9e064c58"
+  },
+  "id_usuario": 60288362,
+  "clave": "$2b$12$lHIJwqZTEsiygl9CT3PEp.2Qy1o2af3VQIn74M0XjiEKT.k2kfHs6",
+  "nombre": "Claudia Camacho",
+  "salario": 1450000,
+  "jornada": "Nocturna",
+  "email": "ClaudiaCamacho@hotmail.com",
+  "cargo": "Operario Aprendiz",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5ed5fd1a472d9e064c5c"
+  },
+  "id_usuario": 60288388,
+  "clave": "$2b$12$8UMbQtwZTiBXpk7IU9.QCub0ZZMShAekYARU6YJRvAPPyr688FJkW",
+  "nombre": "Adriana Rodriguez",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "AdrianaRodriguez@hotmail.com",
+  "cargo": "Operario 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5ed7fd1a472d9e064c5f"
+  },
+  "id_usuario": 60288427,
+  "clave": "$2b$12$MsVkl4YtWSXO/LRZNS0tl.RSnoVqfEc2TUptVa/v6e111PcNV1Oqi",
+  "nombre": "Asbeydi Maldonado",
+  "salario": 2500000,
+  "jornada": "Diurna",
+  "email": "AsbeydiMaldonado@hotmail.com",
+  "cargo": "Asistente Administrativo 2",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5ed9fd1a472d9e064c62"
+  },
+  "id_usuario": 60288514,
+  "clave": "$2b$12$3cGQVBOjRh/rh23rLPqRf.Nxar3a1TTCd4LsVMqG2LFmYH7FVMvHy",
+  "nombre": "Claudia Patricia Camacho",
+  "salario": 1800000,
+  "jornada": "Diurna",
+  "email": "Claudia.PatriciaCamacho@hotmail.com",
+  "cargo": "Asistente Administrativo 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5edcfd1a472d9e064c65"
+  },
+  "id_usuario": 60288536,
+  "clave": "$2b$12$VLrhNZyrhKP0hsQjJcN8eOBzBPDJuusRlKVl1TGtJ.v3Q4.RL4eJS",
+  "nombre": "Abercio Echeverry",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "AbercioEcheverry@hotmail.com",
+  "cargo": "Operario 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5edefd1a472d9e064c68"
+  },
+  "id_usuario": 60288816,
+  "clave": "$2b$12$k64yWxOrKGlNNi9VwxYfZugEdIJqGmlHNdQ5KvdVpArI3IKjxqQxC",
+  "nombre": "Eloina Camacho",
+  "salario": 1350000,
+  "jornada": "Diurna",
+  "email": "EloinaCamacho@hotmail.com",
+  "cargo": "Asistente Junior",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5ee0fd1a472d9e064c6b"
+  },
+  "id_usuario": 60288836,
+  "clave": "$2b$12$Z3eLb8Te8XwU7bWpTAcsYe1Xm3pU5sU6zAGYDXBngHlp3Xgdo5D/u",
+  "nombre": "Avilio Bautista",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "AvilioBautista@hotmail.com",
+  "cargo": "Operario 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d5ee2fd1a472d9e064c6e"
+  },
+  "id_usuario": 60288907,
+  "clave": "$2b$12$BWgMiUzB1oDUb9aLqOKR4.6T1xzQeIiSmdp6PFcQ0hMO2T0ao32dC",
+  "nombre": "Claudia Maldonado",
+  "salario": 1350000,
+  "jornada": "Diurna",
+  "email": "ClaudiaMaldonado@hotmail.com",
+  "cargo": "Asistente Junior",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+},{
+  "_id": {
+    "$oid": "601d6055fd1a472d9e064e44"
+  },
+  "id_usuario": 60301571,
+  "clave": "$2b$12$KS/grZYO9oUG6lQ5aL6xsOr9QwejXQYamCA1tGZZGV7ePhaBWgorO",
+  "nombre": "Esperanza Rodriguez",
+  "salario": 3980000,
+  "jornada": "Diurna",
+  "email": "EsperanzaRodriguez@hotmail.com",
+  "cargo": "Operario 1",
+  "empresa": "60155c7052eab65a94b04d10",
+  "perfil": "client",
+  "estado": "A"
+}]

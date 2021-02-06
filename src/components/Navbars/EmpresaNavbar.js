@@ -45,9 +45,6 @@ function EmpresaNavbar() {
                 <i className="fas fa-bars visible-on-sidebar-mini"></i>
               </Button>
             </div>
-            <Navbar.Brand href="#pablo" onClick={(e) => e.preventDefault()}>
-              Buttons
-            </Navbar.Brand>
           </div>
           <button
             className="navbar-toggler navbar-toggler-right border-0"
@@ -55,6 +52,7 @@ function EmpresaNavbar() {
             onClick={() => setCollapseOpen(!collapseOpen)}
           >
           </button>
+          <h4>Velazquez Naranjo y Cia.</h4>
         </Container>
       </Navbar>
     </>

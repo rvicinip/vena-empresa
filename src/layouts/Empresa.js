@@ -98,7 +98,7 @@ function Empresa() {
         <div className="main-panel">
           <EmpresaNavbar />
           <div className="content">
-            <Switch>{getRoutes(routes)}</Switch>
+            <Switch>{getRoutes(rutasFiltradas)}</Switch>
           </div>
         </div>
       </div>

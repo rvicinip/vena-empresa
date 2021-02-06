@@ -2,15 +2,17 @@
 
 
 import Dashboard from  "views/Dashboard.js";
+import EmpresaDashboard from  "components/dashboards/EmpresaDashboard.js";
 import LoginCliente from "views/Pages/LoginCliente.js";
 import LoginEmpresa from "views/Pages/LoginEmpresa.js";
 import LoginGerencia from "views/Pages/LoginGerencia.js";
 import CambioClave from "views/Pages/CambioClave.js";
-import {Personal} from "components/Personal.js";
 import Inicio from "components/Inicio.js";
 import Registro from "views/Pages/Registro.js";
 import CapturaTiempos from "components/CapturaTiempos.js";
 import PaginaUsuarioEmpresa from "views/Pages/PaginaUsuarioEmpresa.js";
+import PersonalTable from "components/Tables/PersonalTable.js"
+import DiccionarioTable from "components/Tables/DiccionarioTable.js"
 
 import Cliente from "layouts/Cliente.js"
 
@@ -123,7 +125,7 @@ var routes = [
     path: "/registro-empresa",
     layout: "/empresa",
     name: "Registro empresa",
-    icon: "nc-icon nc-chart-pie-35",
+    icon: "nc-icon nc-single-02",
     tablero: false,
     component: Registro ,
   },
@@ -141,17 +143,17 @@ var routes = [
     layout: "/empresa",
     name: "Tablero Control",
     icon: "nc-icon nc-chart-bar-32",
-    tablero: true,
-    component: Dashboard,
+    tablero: false,
+    component: EmpresaDashboard,
   },
   {
     path: "/tabla-personal",
     layout: "/empresa",
-    name: "Personal",
+    name: "Seguimiento Proceso",
     icon: "nc-icon nc-single-02",
     mini: "B",
     tablero: true,
-    component: Personal,
+    component: PersonalTable,
   },
   {
     collapse: true,
@@ -168,7 +170,7 @@ var routes = [
         name: "Diccionario",
         mini: "AC",
         tablero: true,
-        component: Dashboard,
+        component: DiccionarioTable,
       },
       {
         path: "/frecuencias",

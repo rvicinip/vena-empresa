@@ -130,25 +130,6 @@ function Sidebar({ empleado, routes, image, background }) {
     <>
       <div className="sidebar" data-color={background} data-image={image}>
         <div className="sidebar-wrapper">
-          <div className="logo">
-            <a
-              className="simple-text logo-mini"
-              href="http://www.creative-tim.com"
-            >
-              <div className="logo-img">
-                <img
-                  src={require("assets/img/logo.svg").default}
-                  alt="react-logo"
-                />
-              </div>
-            </a>
-            <a
-              className="simple-text logo-normal"
-              href="http://www.creative-tim.com"
-            >
-              Creative Tim
-            </a>
-          </div>
           <div className="user">
             <div className="photo">
               <img
