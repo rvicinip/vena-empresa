@@ -1636,7 +1636,6 @@ const diccionario =  [
 
     for (j=1; j<nroNiveles; j++) {
       tempIdNivel = tempIdNivel+("-")+nivel.substr(j*3,3);
-      console.log(nivel,tempIdNivel)
      }
     return tempIdNivel
   }
@@ -1646,10 +1645,10 @@ const diccionario =  [
   let i,j=0;
   console.log (diccionario, diccionario.length);
   for (i=0; i < diccionario.length; i++) {
-      if (diccionario[i].actividad === undefined) {
+        if (diccionario[i].descripcion === undefined) {
         arreglo.push([formatNivel(diccionario[i].idNivel), diccionario[i].nombreNivel, formatNivel(diccionario[i].idNivelPadre), " "])
        } else {
-        arreglo.push([formatNivel(diccionario[i].idNivel), diccionario[i].nombreNivel, formatNivel(diccionario[i].idNivelPadre), diccionario[i].descripcion.substr(0,30)])
+        arreglo.push([formatNivel(diccionario[i].idNivel), diccionario[i].nombreNivel, formatNivel(diccionario[i].idNivelPadre), diccionario[i].descripcion.substr(0,50)])
 }}
   return arreglo  
 }
@@ -1757,18 +1756,22 @@ function DiccionarioTable()
                     {
                       Header: "Id.",
                       accessor: "idNivel",
+                      totalWidth: 20,
                     },
                     {
                       Header: "Nombre Nivel",
                       accessor: "nombreNivel",
+                      MaxWidth: 30
                     },
                     {
                       Header: "Id Padre",
                       accessor: "idNivelPadre",
+                      width: 16
                     },
                     {
-                      Header: "Descripción Actividads",
-                      accessor: "actividad",
+                      Header: "Descripción",
+                      accessor: "descripcion",
+                      width: 50,
                       sortable: false,
                       filterable: false
                     },

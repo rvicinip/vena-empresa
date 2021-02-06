@@ -16,7 +16,6 @@ import Select from "react-select";
 
 // reactstrap components
 import { Container, Row, Col, FormGroup, Input } from "reactstrap";
-import 'components/table.css'
 
 // Define a default UI for filtering
 function DefaultColumnFilter({

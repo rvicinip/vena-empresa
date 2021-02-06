@@ -10,6 +10,7 @@ import Select from "react-select";
 import PropTypes from "prop-types";
 import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
 import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
+import CapturaTiemposTable from "components/Tables/CapturaTiemposTable.js"
 
 function CapturaTiempos(props) {
 
@@ -95,7 +96,9 @@ useEffect(() => {
     <div>
       <Container>
         <Row>
-          <div className = "col-md-4">
+          <div className="col-md-3">
+          </div>
+          <div className = "col-md-6">
             <h3>Selección de Actividades</h3>
             <Select 
             placeholder = {placeholderN1}
@@ -129,9 +132,11 @@ useEffect(() => {
 
 
           </div>
-          <div className="col-md-8">
-
+          <div className="col-md-3">
           </div>
+        </Row>
+        <Row>
+          <CapturaTiemposTable/>
         </Row>
       </Container>
     </div>

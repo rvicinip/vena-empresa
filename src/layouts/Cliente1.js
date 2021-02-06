@@ -18,8 +18,8 @@ import {
 
 // core components
 import Sidebar from "components/Sidebar/Sidebar.js";
-import EmpresaNavbar from "components/Navbars/EmpresaNavbar.js";
-import EmpresaFooter from "components/Footers/EmpresaFooter.js";
+import ClienteNavbar from "components/Navbars/ClienteNavbar.js";
+import ClienteFooter from "components/Footers/ClienteFooter.js";
 import FixedPlugin from "components/FixedPlugin/FixedPlugin.js";
 
 // dinamically create dashboard routes
@@ -30,56 +30,36 @@ import image2 from "assets/img/full-screen-image-2.jpg";
 import image3 from "assets/img/full-screen-image-3.jpg";
 import image4 from "assets/img/full-screen-image-4.jpg";
 
-
-
 function Cliente() {
   const [sidebarImage, setSidebarImage] = React.useState(image3);
   const [sidebarBackground, setSidebarBackground] = React.useState("red");
 
-
-  const empleado = 
-  {
-    "id_usuario": 2345258,
-    "clave": "$2b$12$P3xjkJsZ3tS.nXLG.D/3ae8hHSQbsJA0TWF0ioobc1cyGNTPw0NX6",
-    "nombre": "Elba Flores",
-    "salario": 1900000,
-    "jornada": "Diurna",
-    "centrocostos": 3,
-    "email": "ElbaFlores@hotmail.com",
-    "cargo": "Vendedor",
-    "empresa": "60155c7052eab65a94b04d10",
-    "perfil": "client",
-    "estado": "A"
-  }
-
-  console.log  ("Nombre Empleado", empleado.nombre)
-  const nombreEmpleado= empleado.nombre
- 
   const getRoutes = (routes) => {
-
-    let arreglo = []
     return routes.map((prop, key) => {
       if (prop.collapse) {
         return getRoutes(prop.views);
       }
+
       if (prop.layout === "/cliente") {
-        return (
+          return (
+          <div>
           <Route
-            path={prop.layout + prop.path} 
+            path={prop.layout + prop.path}
             key={key}
             component={prop.component}
           />
+
+          </div>
         );
       } else {
         return null;
       }
     });
   };
-
   function filtradoRutas (routes) {
     let arreglo = []
     routes.map((prop, key) => {
-      if (prop.layout === "/cliente" && prop.tablero) {
+      if (prop.layout === "/cliente") {
         arreglo.push(prop)
       } 
     });
@@ -91,16 +71,22 @@ function Cliente() {
     <>
       <div className="wrapper">
         <Sidebar
-          empleado={nombreEmpleado}
           routes={rutasFiltradas}
           image={sidebarImage}
           background={sidebarBackground}
         />
         <div className="main-panel">
-          <EmpresaNavbar />
+          <ClienteNavbar />
           <div className="content">
-            <Switch>{getRoutes(rutasFiltradas)}</Switch>
+            <Switch>{getRoutes(routes)}</Switch>
           </div>
+          <ClienteFooter />
+          <div
+            className="close-layer"
+            onClick={() =>
+              document.documentElement.classList.toggle("nav-open")
+            }
+          />
         </div>
       </div>
       <FixedPlugin

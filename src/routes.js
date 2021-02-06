@@ -47,7 +47,7 @@ var routes = [
     name: "Seleccion Actividades",
     icon: "nc-icon nc-bullet-list-67",
     tablero: true,
-    component: Dashboard,
+    component: Inicio,
   },  
   {
     path: "/captura-frecuencias",
