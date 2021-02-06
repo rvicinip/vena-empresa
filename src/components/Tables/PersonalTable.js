@@ -1089,7 +1089,7 @@ function PersonalTable()
                   <Col xs="7">
                     <div className="numbers">
                       <p className="card-category">Capturas de Tiempo</p>
-                      <Card.Title as="h4">150GB</Card.Title>
+                      <Card.Title as="h4">60</Card.Title>
                     </div>
                   </Col>
                 </Row>
@@ -1108,7 +1108,7 @@ function PersonalTable()
                   <Col xs="7">
                     <div className="numbers">
                       <p className="card-category">Sin Iniciar</p>
-                      <Card.Title as="h4">$ 1,345</Card.Title>
+                      <Card.Title as="h4">30</Card.Title>
                     </div>
                   </Col>
                 </Row>
@@ -1127,7 +1127,7 @@ function PersonalTable()
                   <Col xs="7">
                     <div className="numbers">
                       <p className="card-category">En Proceso</p>
-                      <Card.Title as="h4">23</Card.Title>
+                      <Card.Title as="h4">20</Card.Title>
                     </div>
                   </Col>
                 </Row>
@@ -1146,7 +1146,7 @@ function PersonalTable()
                   <Col xs="7">
                     <div className="numbers">
                       <p className="card-category">Cerradas</p>
-                      <Card.Title as="h4">+45K</Card.Title>
+                      <Card.Title as="h4">10</Card.Title>
                     </div>
                   </Col>
                 </Row>

@@ -55,7 +55,14 @@ function crearlistaActividadesTabla () {
       "Nullam aliquet semper mauris, in egestas eros auctor eu. Integer facilisis luctus neque, gravida ultrices nisi aliquet ut. Proin egestas ultrices turpis, vitae semper leo vulputate sit amet. Maecenas aliquam auctor dapibus. Aliquam eleifend, dolor a finibus pellentesque, leo ligula rhoncus tellus, eget porta magna felis sit amet justo. Sed lacinia lorem sed diam elementum, ut dictum metus ultricies. Sed ac dapibus eros, sed facilisis erat. Aliquam a efficitur diam, vel rutrum diam. Quisque vehicula eget odio eu dictum. Donec sed massa et quam semper gravida tempor eget est. Vivamus hendrerit consequat placerat. Aliquam malesuada augue in augue blandit molestie. Vivamus aliquam consectetur odio, ut rutrum massa mattis in. Mauris consectetur neque ante, nec volutpat lacus fermentum et. Pellentesque maximus ullamcorper auctor."
   }
  ]
+var placeholderN1=""
+var value={selectN1}
+const  nombre: ["Minuto","Hora","Dia","Semana","Quincena","Mes","Bimestre","Trimestre","Semestre","Año"]
+const  frecuencia: ["Semana", "Quincena","Mes","Bimestre","Trimestre","Semestre","Año",]
 
+
+var getOptionName={(option) => option.idNivel}
+var  getOptionLabel={(option) => option.nombreNivel}
 
   
   function formatNivel(nivel) {
@@ -124,18 +131,28 @@ function CapturaTiemposTable()
               onClick={() => {
                 let obj = data.find((o) => o.id === key);
                 alert(
-
-                  
-                  "You've clicked EDIT button on \n{ \nName: " +
-                    obj.name +
-                    ", \nposition: " +
-                    obj.position +
-                    ", \noffice: " +
-                    obj.office +
-                    ", \nage: " +
-                    obj.age +
-                    "\n}."
-                );
+                  placeholder={placeholderN1}
+                  <Select
+                  value={selectN1}
+                  options={diccN1}
+                  onChange={onChangeN1}
+                  getOptionName={(option) => option.idNivel}
+                  getOptionLabel={(option) => option.nombreNivel}
+                />
+                <Button
+                onClick={() => {
+                  let obj = data.find((o) => o.id === key);
+                  alert(
+                    placeholder={placeholderN1}
+                    <Select
+                    value={selectN1}
+                    options={diccN1}
+                    onChange={onChangeN1}
+                    getOptionName={(option) => option.idNivel}
+                    getOptionLabel={(option) => option.nombreNivel}
+                  />
+      
+                     );
               }}
               variant="warning"
               size="sm"

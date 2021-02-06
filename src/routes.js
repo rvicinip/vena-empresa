@@ -13,6 +13,7 @@ import CapturaTiempos from "components/CapturaTiempos.js";
 import PaginaUsuarioEmpresa from "views/Pages/PaginaUsuarioEmpresa.js";
 import PersonalTable from "components/Tables/PersonalTable.js"
 import DiccionarioTable from "components/Tables/DiccionarioTable.js"
+import FrecuenciasTable from "components/Tables/FrecuenciasTable.js"
 
 import Cliente from "layouts/Cliente.js"
 
@@ -178,7 +179,7 @@ var routes = [
         name: "Tabla Frecuencias",
         mini: "FR",
         tablero: true,
-        component: Dashboard,
+        component: FrecuenciasTable,
       }
     ]
   },  
