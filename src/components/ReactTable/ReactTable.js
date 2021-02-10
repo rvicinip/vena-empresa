@@ -47,8 +47,8 @@ fuzzyTextFilterFn.autoRemove = (val) => !val;
 // Our table component
 function Table({ columns, data }) {
   const [numberOfRows, setNumberOfRows] = React.useState({
-    value: 10,
-    label: "10 Filas",
+    value: 5,
+    label: "5 Filas",
   });
   const [pageSelect, handlePageSelect] = React.useState({
     value: 0,
@@ -119,6 +119,7 @@ function Table({ columns, data }) {
     Array(pageOptions.length)
   ).map(function () {});
   let numberOfRowsData = [5, 10, 20, 25, 50, 100];
+  console.log("Todo lo que le pasa para imprimir la tabla",data)
   return (
     <>
       <div className="ReactTable -striped -highlight primary-pagination">

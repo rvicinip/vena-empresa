@@ -1643,18 +1643,19 @@ const diccionario =  [
   let arreglo=[];
   let nivel="";
   let i,j=0;
-  console.log (diccionario, diccionario.length);
+
   for (i=0; i < diccionario.length; i++) {
         if (diccionario[i].descripcion === undefined) {
         arreglo.push([formatNivel(diccionario[i].idNivel), diccionario[i].nombreNivel, formatNivel(diccionario[i].idNivelPadre), " "])
        } else {
         arreglo.push([formatNivel(diccionario[i].idNivel), diccionario[i].nombreNivel, formatNivel(diccionario[i].idNivelPadre), diccionario[i].descripcion.substr(0,50)])
 }}
+  console.log("Arreglo de diccionario",arreglo)
   return arreglo  
 }
 
 const dataTable = crearDiccionarioTabla()
-console.log("dataTable",dataTable)
+
 
 function DiccionarioTable() 
 {

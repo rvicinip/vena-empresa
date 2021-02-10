@@ -9,11 +9,12 @@ import LoginGerencia from "views/Pages/LoginGerencia.js";
 import CambioClave from "views/Pages/CambioClave.js";
 import Inicio from "components/Inicio.js";
 import Registro from "views/Pages/Registro.js";
-import CapturaTiempos from "components/CapturaTiempos.js";
 import PaginaUsuarioEmpresa from "views/Pages/PaginaUsuarioEmpresa.js";
 import PersonalTable from "components/Tables/PersonalTable.js"
 import DiccionarioTable from "components/Tables/DiccionarioTable.js"
 import FrecuenciasTable from "components/Tables/FrecuenciasTable.js"
+
+
 
 import Cliente from "layouts/Cliente.js"
 
@@ -42,6 +43,7 @@ var routes = [
     tablero: true,
     component: Cliente,
   },  
+  
   {
     path: "/seleccion-actividades",
     layout: "/cliente",
@@ -50,6 +52,7 @@ var routes = [
     tablero: true,
     component: Inicio,
   },  
+   
   {
     path: "/captura-frecuencias",
     layout: "/cliente",
@@ -58,6 +61,7 @@ var routes = [
     tablero: true,
     component: Inicio,
   },  
+
   {
     path: "/cierre-encuesta",
     layout: "/cliente",

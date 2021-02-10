@@ -1,27 +1,44 @@
+// Componente: CapturaTiempos.js
+// Autor: Reinaldo Vicini
+// Fecha: 2021/02/09
+// Descripcion:
+// Parametros:
+//
+
 import React, { useState, useEffect, useRef } from "react";
-import { DataTable } from "primereact/datatable";
-import { Column } from "primereact/column";
 import { Button } from "primereact/button";
-import { ServicioDiccionario } from "services/ServicioDiccionario";
-import { InputText } from "primereact/inputtext";
-import { Dialog } from "primereact/dialog";
-import { Container, Row, DropdownButton, Dropdown } from "react-bootstrap";
+import {
+  Table,
+  Container,
+  Row,
+  DropdownButton,
+  Dropdown,
+} from "react-bootstrap";
+import { PrimeIcons } from 'primereact/api';
 import Select from "react-select";
-import PropTypes from "prop-types";
-import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
-import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
-import CapturaTiemposTable from "components/Tables/CapturaTiemposTable.js";
+
+import { v4 as uuidv4 } from "uuid";
+
+// import { DataTable } from "primereact/datatable";
+// import { Column } from "primereact/column";
+// import { ServicioDiccionario } from "services/ServicioDiccionario";
+// import { InputText } from "primereact/inputtext";
+// import { Dialog } from "primereact/dialog";
+
+// import PropTypes from "prop-types";
+// import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
+// import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
 
 function CapturaTiempos(props) {
   const empresa = props.datos.dato1;
   const empleado = props.datos.dato2;
-  const tablas = props.datos.dato3;
   const frecuencia = props.datos.dato4;
   const diccionario = props.datos.dato5;
   let reporteTiempos = props.datos.dato6;
   let formatDescripcion;
-  let primeraActividad;
-  let lineaArreglo;
+
+  const tablas = props.datos.dato3;
+
   const placeholderN1 = "Seleccione ".concat(tablas[0], "...");
   const placeholderN2 = "Seleccione ".concat(tablas[1], "...");
   const placeholderN3 = "Seleccione ".concat(tablas[2], "...");
@@ -29,8 +46,7 @@ function CapturaTiempos(props) {
   const [selectN1, setSelectN1] = useState(null);
   const [selectN2, setSelectN2] = useState(null);
   const [selectN3, setSelectN3] = useState(null);
-  const [listaActividades,setListaActividades] = useState([" "," "," "])
-  console.log("esta esla primera vuelta",listaActividades)
+  const [listaActividades, setListaActividades] = useState([]);
 
   const [diccN1, setDiccN1] = useState(() =>
     diccionario.filter((entrada) => entrada.idNivelPadre === "0")
@@ -43,10 +59,16 @@ function CapturaTiempos(props) {
 
   const [descripcionDef, setDescripcionDef] = useState(null);
 
-  useEffect(() => {
-    console.log("INICIALIZACION DE DICCIONARIO");
-    console.log("Valor Inicial de Diccionario N1:", diccN1);
-  }, []);
+  function formatNivel(nivel) {
+    var tempIdNivel = nivel.substring(0, 3);
+    var nroNiveles = nivel.length / 3;
+    var j;
+
+    for (j = 1; j < nroNiveles; j++) {
+      tempIdNivel = tempIdNivel + "-" + nivel.substr(j * 3, 3);
+    }
+    return tempIdNivel;
+  };
 
   useEffect(() => {
     if (selectN1 != null) {
@@ -55,29 +77,23 @@ function CapturaTiempos(props) {
           (entrada) => entrada.idNivelPadre === selectN1.idNivel
         )
       );
-      console.log(selectN1.idNivel, "DiccN2", diccN2);
     }
   }, [selectN1]);
 
   useEffect(() => {
-    console.log("Cambió N2", selectN2);
-    console.log("INICIALIZACION DE DICCIONARIO NIVEL 3");
-    console.log("selectN1", selectN1);
-    console.log("selectN2", selectN2);
     if (selectN2 != null) {
       setDiccN3(
         diccionario.filter(
           (entrada) => entrada.idNivelPadre === selectN2.idNivel
         )
       );
-      console.log(selectN2.idNivel, "DiccN3", diccN3);
     }
   }, [selectN2]);
 
   const onChangeN1 = (obj) => {
     setSelectN1(obj);
     setInhabilitarDropdownN2(false);
-    setInhabilitarDropdownN3(false);
+    setInhabilitarDropdownN3(true);
     setSelectN2(null);
     setSelectN3(null);
   };
@@ -90,31 +106,31 @@ function CapturaTiempos(props) {
 
   const onChangeN3 = (obj) => {
     setSelectN3(obj);
-    setDescripcionDef(obj.descripcion);
-
+    console.log("Display Seleccion", obj, typeof descripcionDef);
+    typeof descripcionDef !== undefined
+      ? setDescripcionDef(obj.descripcion.substr(0, 250))
+      : setDescripcionDef(null);
   };
 
   const onGrabacion = () => {
-    console.log("Aqui terminó", lineaArreglo,selectN3)
-
-    // lineaArreglo = [selectN3, nombreNivel, descripcion]
-    // primeraActividad=listaActividades[0]
-    // if (listaActividades.length===1 && primeraActividad[0]===" ") 
-    //   {setListaActividades(lineaArreglo)}
-    //   else
-    //   {setListaActividades(listaActividades.concat(lineaArreglo))}
-    
+    console.log("Entrooo ", selectN3);
+    const nuevaListaActividades = listaActividades.concat({
+      id: uuidv4(),
+      idNivel: formatNivel(selectN3.idNivel),
+      nombreNivel: selectN3.nombreNivel,
+      descripcion: selectN3.descripcion.substr(0, 250),
+    });
+    setListaActividades(nuevaListaActividades);
+    console.log(listaActividades);
   };
 
-
-  
   return (
     <div>
       <Container>
         <Row>
           <div className="col-md-1"></div>
           <div className="col-md-5">
-            <h2>Selección de Actividades</h2>
+            <h5>Selección de Actividades</h5>
             <Select
               placeholder={placeholderN1}
               value={selectN1}
@@ -152,21 +168,56 @@ function CapturaTiempos(props) {
         </Row>
         <Row>
           <div className="col-md-1"></div>
-          <div className="col-md-10">
-          <Button
+          <div className="col-md-10" text-align-center="true">
+            <Button
               onClick={onGrabacion}
               variant="primary"
               size="sm"
               className="btn-wd mr-1"
-
-            >Grabar
-            </Button>{" "}
- 
-           </div>
+            >
+              Grabar
+            </Button>
+          </div>
           <div className="col-md-1"></div>
         </Row>
         <Row>
-          <CapturaTiemposTable listaActividades = {listaActividades}/>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th className="width-10">Id.</th>
+                <th className="width-30">Nombre</th>
+                <th className="width-40">Descripción</th>
+                <th className="width-10">Status</th>
+                <th className="width-10">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              {listaActividades.map((item) => (
+                <tr id={item.id} key={item.id}>
+                  <td>{item.idNivel}</td>
+                  <td>{item.nombreNivel}</td>
+                  <td>{item.descripcion}</td>
+                  <td className="">
+                    <span className="product-badge status-instock">INSTOCK</span>
+                  </td>
+                  <td>
+                    <button className="p-button p-component p-button-rounded p-button-success p-mr-2 p-button-icon-only">
+                      <span className="nc nc-zoom-split nc-c"></span>
+                      <span className="p-button-label p-c">&nbsp;</span>
+                      <span
+                        className="p-ink"
+                        style={{height: 33, width: 33, top: 10.5, left: 8.5}}/>
+                    </button>
+                    <button className="p-button p-component p-button-rounded p-button-warning p-button-icon-only">
+                      <span className="pi pi-trash p-c"></span>
+                      <span className="p-button-label p-c">&nbsp;</span>
+                      <span className="p-ink"></span>
+                    </button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </Table>
         </Row>
       </Container>
     </div>

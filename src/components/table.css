@@ -11,13 +11,97 @@ table td, :table th {
   
 table tr:nth-child(even){background-color: #f2f2f2;}
   
-table tr:hover {background-color: #ddd;}
+table tr:hover {background-color: rgb(141, 63, 63);}
   
 table th {
     padding-top: 12px;
     padding-bottom: 12px;
-    text-align: ;
-    background-color: #ddd;
+    text-align: center;
+    background-color: #eb3e48;
     color: white;
+    width: 20%
   }
-  
+ .width-10 {
+   width: 10%!important;
+ } 
+ .width-20 {
+  width: 20%!important;
+} 
+.width-30 {
+  width: 30%!important;
+}
+.width-40 {
+  width: 40%!important;
+}
+.width-50 {
+  width: 50%!important;
+} 
+.product-badge.status-instock {
+  background: #c8e6c9;
+  color: #256029;
+}
+
+.product-badge {
+  border-radius: 2px;
+  padding: .25em .5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: .3px;
+}
+
+.p-button.p-button-icon-only.p-button-rounded {
+  border-radius: 50%;
+  height: 2.357rem;
+}
+
+.p-button.p-button-warning, .p-buttonset.p-button-warning > .p-button, .p-splitbutton.p-button-warning > .p-button {
+  color: #212529;
+  background: #FBC02D;
+  border: 1px solid #FBC02D;
+}
+.p-button.p-button-icon-only {
+  width: 2.357rem;
+  padding: 0.5rem 0;
+}
+.p-button.p-button-rounded {
+  border-radius: 2rem;
+}
+.p-button-icon-only {
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.p-button {
+  margin: 0;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-flex-align: center;
+  align-items: center;
+  vertical-align: bottom;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.p-component, .p-component * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.p-button {
+  color: #ffffff;
+  background: #2196F3;
+  border: 1px solid #2196F3;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  border-radius: 3px;
+}
+.p-component {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: normal;
+}

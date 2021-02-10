@@ -160,15 +160,13 @@ const JSONTabla = [
 }
 
 const dataTable = crearDataTabla()
-console.log("dataTable",dataTable)
-
 
 function FrecuenciasTable() 
 {
   const [data, setData] = React.useState(
     dataTable.map((prop, key) => {
 
-
+      console.log ("prop Frecuencias", prop)
       return {
         id: key,
         nombre: prop[0],

@@ -1,5 +1,5 @@
 import React from "react"
-import  CapturaTiempos from "./CapturaTiempos";
+import  CapturaTiempos from "components/CapturaTiempos/CapturaTiempos.js";
 
 export default function Inicio() {
   // Cargar el diccionario de actividades
