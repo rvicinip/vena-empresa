@@ -14,7 +14,8 @@ import {
   DropdownButton,
   Dropdown,
 } from "react-bootstrap";
-import { PrimeIcons } from 'primereact/api';
+import { PrimeIcons } from "primereact/api";
+import { ScrollPanel } from 'primereact/scrollpanel';
 import Select from "react-select";
 
 import { v4 as uuidv4 } from "uuid";
@@ -68,7 +69,7 @@ function CapturaTiempos(props) {
       tempIdNivel = tempIdNivel + "-" + nivel.substr(j * 3, 3);
     }
     return tempIdNivel;
-  };
+  }
 
   useEffect(() => {
     if (selectN1 != null) {
@@ -124,6 +125,35 @@ function CapturaTiempos(props) {
     console.log(listaActividades);
   };
 
+  const BotonEditar = () => {
+    let obj = item.find((o) => o.id === key);
+    alert(
+      "You've clicked EDIT button on \n{ \nName: " +
+        obj.name +
+        ", \nposition: " +
+        obj.position +
+        ", \noffice: " +
+        obj.office +
+        ", \nage: " +
+        obj.age +
+        "\n}."
+    );
+  }
+
+  const BotonBorrar = () => {
+    var newData = data;
+    newData.find((o, i) => {
+      if (o.id === key) {
+        // here you should add some custom code so you can delete the data
+        // from this component and from your server as well
+        newData.splice(i, 1);
+        return true;
+      }
+      return false;
+    });
+    setData([...newData]);
+  }
+
   return (
     <div>
       <Container>
@@ -161,14 +191,16 @@ function CapturaTiempos(props) {
             />
           </div>
           <div className="col-md-5">
-            <h5 style={{ top: 20 }}>Descripción</h5>
-            <p> {descripcionDef}</p>
+          <h5 style={{ top: 20 }}>Descripción</h5>
+          <ScrollPanel style={{width: '100%', height: '150px'}}>
+              {descripcionDef}
+          </ScrollPanel>
           </div>
           <div className="col-md-1"></div>
         </Row>
         <Row>
-          <div className="col-md-1"></div>
-          <div className="col-md-10" text-align-center="true">
+          <div className="col-md-5"></div>
+          <div className="col-md-1" text-align-center="true">
             <Button
               onClick={onGrabacion}
               variant="primary"
@@ -185,10 +217,10 @@ function CapturaTiempos(props) {
             <thead>
               <tr>
                 <th className="width-10">Id.</th>
-                <th className="width-30">Nombre</th>
+                <th className="width-20">Nombre</th>
                 <th className="width-40">Descripción</th>
                 <th className="width-10">Status</th>
-                <th className="width-10">Acciones</th>
+                <th className="width-20">Acciones</th>
               </tr>
             </thead>
             <tbody>
@@ -197,22 +229,32 @@ function CapturaTiempos(props) {
                   <td>{item.idNivel}</td>
                   <td>{item.nombreNivel}</td>
                   <td>{item.descripcion}</td>
-                  <td className="">
-                    <span className="product-badge status-instock">INSTOCK</span>
-                  </td>
+                  <div className="">
+                    <td className="">
+                      <span className="product-badge status-instock">
+                        LISTA
+                      </span>
+                    </td>
+                  </div>
                   <td>
-                    <button className="p-button p-component p-button-rounded p-button-success p-mr-2 p-button-icon-only">
-                      <span className="nc nc-zoom-split nc-c"></span>
-                      <span className="p-button-label p-c">&nbsp;</span>
-                      <span
-                        className="p-ink"
-                        style={{height: 33, width: 33, top: 10.5, left: 8.5}}/>
-                    </button>
-                    <button className="p-button p-component p-button-rounded p-button-warning p-button-icon-only">
-                      <span className="pi pi-trash p-c"></span>
-                      <span className="p-button-label p-c">&nbsp;</span>
-                      <span className="p-ink"></span>
-                    </button>
+                    <div className="actions-right">
+                      <Button OnClick={BotonEditar} 
+                        variant="warning"
+                        size="sm"
+                        className="text-warning btn-link edit"
+                      >
+                        <i className="fa fa-edit" />
+                      </Button>{" "}
+                      {/* use this button to remove the data row */}
+                      <Button
+                        onClick={BotonBorrar}
+                        variant="danger"
+                        size="sm"
+                        className="btn-link remove text-danger"
+                      >
+                        <i className="fa fa-times" />
+                      </Button>{" "}
+                    </div>
                   </td>
                 </tr>
               ))}

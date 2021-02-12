@@ -7,13 +7,14 @@ import LoginCliente from "views/Pages/LoginCliente.js";
 import LoginEmpresa from "views/Pages/LoginEmpresa.js";
 import LoginGerencia from "views/Pages/LoginGerencia.js";
 import CambioClave from "views/Pages/CambioClave.js";
-import Inicio from "components/Inicio.js";
+import Inicio from "components/Inicio/Inicio.js";
 import Registro from "views/Pages/Registro.js";
 import PaginaUsuarioEmpresa from "views/Pages/PaginaUsuarioEmpresa.js";
 import PersonalTable from "components/Tables/PersonalTable.js"
 import DiccionarioTable from "components/Tables/DiccionarioTable.js"
 import FrecuenciasTable from "components/Tables/FrecuenciasTable.js"
-
+import InicioModelo2 from "components/Inicio/InicioModelo2.js";
+import InicioReactTable from "components/Inicio/InicioReactTable.js";
 
 
 import Cliente from "layouts/Cliente.js"
@@ -56,12 +57,19 @@ var routes = [
   {
     path: "/captura-frecuencias",
     layout: "/cliente",
-    name: "Captura Frecuencias",
+    name: "Modelo 2 Bootstrap",
     icon: "nc-icon nc-watch-time",
     tablero: true,
-    component: Inicio,
+    component: InicioModelo2,
   },  
-
+  {
+    path: "/reactTable",
+    layout: "/cliente",
+    name: "React Table",
+    icon: "nc-icon nc-cloud-upload-94",
+    tablero: true,
+    component: InicioReactTable,
+  },
   {
     path: "/cierre-encuesta",
     layout: "/cliente",

@@ -36,75 +36,83 @@ const empleado = {
 
 
   const frecuencia = [
+
     {
       empresa: "60155c7052eab65a94b04d10",
-      nombre: "Minuto",
-      tipo: "1",
-      valor: "0.016667",
-      unidad: "hora"
-    },
-    {
-      empresa: "60155c7052eab65a94b04d10",
-      nombre: "Hora",
-      tipo: "1",
-      valor: "1",
-      unidad: "hora"
+      nombre: "hora",
+      tipo: "0",
+      valor: "60",
+      unidad: "minuto(s)"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Dia",
+      tipo: "0",
+      valor: "480",
+      unidad: "minuto(s)"
+    },
+    {
+      empresa: "60155c7052eab65a94b04d10",
+      nombre: "Semana",
+      tipo: "0",
+      valor: "2400",
+      unidad: "minuto(s)"
+    },
+   {
+      empresa: "60155c7052eab65a94b04d10",
+      nombre: "Dia",
       tipo: "1",
       valor: "8",
-      unidad: "hora"
+      unidad: "hora(s)"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Semana",
       tipo: "1",
       valor: "40",
-      unidad: "hora"
+      unidad: "hora(s)"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Quincena",
       tipo: "1",
       valor: "80",
-      unidad: "hora"
+      unidad: "hora(s)"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Mes",
       tipo: "1",
       valor: "160",
-      unidad: "hora"
+      unidad: "hora(s)"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Bimestre",
       tipo: "1",
       valor: "320",
-      unidad: "hora"
+      unidad: "hora(s)"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Trimestre",
       tipo: "1",
       valor: "480",
-      unidad: "hora"
+      unidad: "hora(s)"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Semestre",
       tipo: "1",
       valor: "960",
-      unidad: "hora"
+      unidad: "hora(s)"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
       nombre: "Año",
       tipo: "1",
       valor: "1920",
-      unidad: "hora"
+      unidad: "hora(s)"
     },
     {
       empresa: "60155c7052eab65a94b04d10",
