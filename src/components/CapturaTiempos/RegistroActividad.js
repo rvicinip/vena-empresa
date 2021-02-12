@@ -7,7 +7,10 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { ScrollPanel } from "primereact/scrollpanel";
+import MantenimientoListaActividades from "components/CapturaTiempos/MantenimientoListaActividades.js"
 import Actividad from 'components/CapturaTiempos/Actividad.js'
+import Select from "react-select";
+import { v4 as uuidv4 } from "uuid";
 
 import {
   Modal,
@@ -18,34 +21,9 @@ import {
   DropdownButton,
   Dropdown,
 } from "react-bootstrap";
-import Select from "react-select";
 
-import { v4 as uuidv4 } from "uuid";
 
 function RegistroActividad(props) {
-  // $(document).ready(function(){
-  // // Activate tooltip
-  // $('[data-toggle="tooltip"]').tooltip();
-
-  // // Select/Deselect checkboxes
-  // var checkbox = $('table tbody input[type="checkbox"]');
-  // $("#selectAll").click(function(){
-  // 	if(this.checked){
-  // 		checkbox.each(function(){
-  // 			this.checked = true;
-  // 		});
-  // 	} else{
-  // 		checkbox.each(function(){
-  // 			this.checked = false;
-  // 		});
-  // 	}
-  // });
-  // checkbox.click(function(){
-  // 	if(!this.checked){
-  // 		$("#selectAll").prop("checked", false);
-  // 	}
-  // });
-  // });
 
   const empresa = props.datos.dato1;
   const empleado = props.datos.dato2;
@@ -53,7 +31,7 @@ function RegistroActividad(props) {
   const diccionario = props.datos.dato5;
   let reporteTiempos = props.datos.dato6;
   let formatDescripcion;
-  console.log("Frecuencias",frecuencia)
+
 
   const tablas = props.datos.dato3;
 
@@ -104,78 +82,7 @@ function RegistroActividad(props) {
     );
   };
 
-  // const ModalEditarRegistroTiempo = () => {
-  //   return (
-  //     <div>
-  //       <div id="editEmployeeModal" className="modal fade">
-  //         <div className="modal-dialog">
-  //           <div className="modal-content">
-  //             <form>
-  //               <div className="modal-header">
-  //                 <h4 className="modal-title">Tiempos de Actividad</h4>
-  //                 <button
-  //                   type="button"
-  //                   className="close"
-  //                   data-dismiss="modal"
-  //                   aria-hidden="true"
-  //                 >
-  //                   &times;
-  //                 </button>
-  //               </div>
-  //               <div className="modal-body">
-  //                 <div className="form-group">
-  //                   <label>Cantidad</label>
-  //                   <input type="text" className="form-control" required />
-  //                 </div>
-  //                 <Select
-  //                   placeholder={placeholderUnTpo}
-  //                   value={selectUnTpo}
-  //                   options={diccUnTpo}
-  //                   onChange={onChangeUnTpo}
-  //                   getOptionName={(option) => option.unidad}
-  //                   getOptionLabel={(option) => option.unidad}
-  //                 />
-
-  //                 <Select
-  //                   placeholder={placeholderFrecTpo}
-  //                   isDisabled={inhabilitarDropdownFrecTpo}
-  //                   value={selectFrecTpo}
-  //                   options={diccFrecTpo}
-  //                   onChange={onChangeFrecTpo}
-  //                   getOptionName={(option) => option.nombre}
-  //                   getOptionLabel={(option) => option.nombre}
-  //                 />
-  //               </div>
-  //               <div className="modal-footer">
-  //                 <Button
-  //                   onClick={onGrabacion}
-  //                   variant="primary"
-  //                   size="sm"
-  //                   className="btn-wd mr-1"
-  //                 >
-  //                   Grabar
-  //                 </Button>
-
-  //                 <input
-  //                   type="button"
-  //                   className="btn btn-default"
-  //                   data-dismiss="modal"
-  //                   value="Cancelar"
-  //                 />
-  //                 <input
-  //                   type="submit"
-  //                   className="btn btn-info"
-  //                   value="Grabar"
-  //                 />
-  //               </div>
-  //             </form>
-  //           </div>
-  //         </div>
-  //       </div>
-  //     </div>
-  //   );
-  // };
-
+ 
   // Modal Agregar Nueva Actividad
   const [isOpenModalNuevaActividad, setIsOpenModalNuevaActividad] = useState(
     false
@@ -193,7 +100,7 @@ function RegistroActividad(props) {
   const [selectN1, setSelectN1] = useState(null);
   const [selectN2, setSelectN2] = useState(null);
   const [selectN3, setSelectN3] = useState(null);
-  const [listaActividades, setListaActividades] = useState([]);
+  // const [listaActividades, setListaActividades] = useState([]);
 
   const [diccN1, setDiccN1] = useState(() =>
     diccionario.filter((entrada) => entrada.idNivelPadre === "0")
@@ -205,6 +112,8 @@ function RegistroActividad(props) {
   const [inhabilitarDropdownN3, setInhabilitarDropdownN3] = useState(true);
 
   const [descripcionDef, setDescripcionDef] = useState(null);
+
+  const [tablaImpresion,setTablaImpresion] = useState([])
 
   function formatNivel(nivel) {
     var tempIdNivel = nivel.substring(0, 3);
@@ -260,7 +169,11 @@ function RegistroActividad(props) {
   };
 
   const onGrabacion = () => {
-    const nuevaListaActividades = listaActividades.concat({
+  // Se envia el conjunto de parametros para agregar un nuevo registro 
+  // a la lista de actividades
+    const novedad = {
+      tipoNovedad: "A",
+      registroNovedad: {
       id: uuidv4(),
       idNivel: formatNivel(selectN3.idNivel),
       nombreNivel: selectN3.nombreNivel,
@@ -268,73 +181,17 @@ function RegistroActividad(props) {
       cantTpo: 0,
       selectTpo: null,
       selectFrecTpo: null,
-    });
-    setListaActividades(nuevaListaActividades);
-    console.log(listaActividades);
+      }
+    };
+    var nuevaTablaImpresion = MantenimientoListaActividades(novedad={novedad})
+    setTablaImpresion(nuevaTablaImpresion);
+
+
+
     manejarCierreModalNuevaActividad();
   };
-
-  // // Modal Agregar Registro Tiempos
-  // const [isOpenModalRegistroTiempos, setIsOpenModalRegistroTiempos] = useState(
-  //   false
-  // );
-
-  // const manejarAperturaModalRegistroTiempos = () =>
-  //   setIsOpenModalRegistroTiempos(true);
-  // const manejarCierreModalRegistroTiempos = () =>
-  //   setIsOpenModalRegistroTiempos(false);
-
-  // const placeholderCantTpo = "Tiempo Estimado";
-  // const placeholderUnTpo = "Seleccione Unidad Tiempo";
-  // const placeholderFrecTpo = "Seleccione Frecuencia Actividad";
-
-  // const opcionesUnTpo = [
-  //   { unidad: "minuto(s)", tipo: "0" },
-  //   { unidad: "hora(s)", tipo: "1" },
-  //   { unidad: "dia(s)", tipo: "2" },
-  // ];
-  // const [diccUnTpo, setDiccUnTpo] = useState([
-  //   "minuto(s)",
-  //   "hora(s)",
-  //   "dia(s)",
-  // ]);
-  // const [diccFrecTpo, setDiccFrecTpo] = useState(null);
-
-  // const [selectUnTpo, setSelectUnTpo] = useState(null);
-  // const [selectFrecTpo, setSelectFrecTpo] = useState(null);
-
-  // const [inhabilitarDropdownFrecTpo, setInhabilitarDropdownFrecTpo] = useState(
-  //   true
-  // );
-
-  // useEffect(() => {
-  //   if (selectUnTpo != null) {
-  //     console.log("SelectUnTipo", selectUnTpo, "Frecuencias:", frecuencia);
-  //     setDiccFrecTpo(
-  //       frecuencia.filter((entrada) => entrada.tipo === selectUnTpo.tipo)
-  //     );
-  //   }
-  // }, [selectUnTpo]);
-
-  // const onChangeUnTpo = (obj) => {
-  //   setSelectUnTpo(obj);
-  //   setInhabilitarDropdownFrecTpo(false);
-  //   setSelectFrecTpo(null);
-  // };
-
-  // const onChangeFrecTpo = (obj) => {
-  //   setSelectFrecTpo(obj);
-  // };
-
-
-
-
-
-
-  const informeActividades = listaActividades.map((actividad) => 
-    <Actividad actividad={actividad} frecuencia={frecuencia}/>)
-
-
+  const DetalleActividades = tablaImpresion.map((actividad) => 
+   <Actividad key={actividad.id} actividad={actividad} frecuencia={frecuencia}/>)
 
   return (
     <div>
@@ -345,7 +202,7 @@ function RegistroActividad(props) {
               <div className="row">
                 <div className="col-sm-6">
                   <h2>
-                    Registro <b>Actividades</b>
+                    Registro  <b>Actividades</b>
                   </h2>
                 </div>
                 <div className="col-sm-6">
@@ -415,14 +272,14 @@ function RegistroActividad(props) {
                     </Modal.Footer>
                   </Modal>
 
-                  <Button
+                  {/* <Button
                     onClick={() => <ModalBorrarActividad />}
                     variant="danger"
                     size="sm"
                     className="btn btn-danger"
                   >
                     Borrar
-                  </Button>
+                  </Button> */}
 
                   {/* <a href="#addEmployeeModal" className="btn btn-success" data-toggle="modal"><i className="material-icons">&#xE147;</i> <span>Agregar nueva actividad</span></a>
 						            <a href="#deleteEmployeeModal" className="btn btn-danger" data-toggle="modal"><i className="material-icons">&#xE15C;</i> <span>Borrar</span></a>						 */}
@@ -439,7 +296,7 @@ function RegistroActividad(props) {
                   <th>Acciones</th>
                 </tr>
               </thead>
-              <tbody>{informeActividades}</tbody>
+              {DetalleActividades}
             </table>
           </div>
         </div>
