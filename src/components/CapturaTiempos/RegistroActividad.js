@@ -7,7 +7,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { ScrollPanel } from "primereact/scrollpanel";
-import MantenimientoListaActividades from "components/CapturaTiempos/MantenimientoListaActividades.js"
+import {MantenimientoListaActividades} from "components/CapturaTiempos/Mantenimiento.js"
 import Actividad from 'components/CapturaTiempos/Actividad.js'
 import Select from "react-select";
 import { v4 as uuidv4 } from "uuid";
@@ -168,6 +168,53 @@ function RegistroActividad(props) {
       : setDescripcionDef(null);
   };
 
+  const [listaActividades,setListaActividades] = useState([])
+
+  const function mantenimientoListaActividades(novedad) {
+
+    var nuevaListaActividades = [[]]
+    var tipoNovedad = novedad.tipoNovedad;
+    const registro = novedad.registro
+    
+
+    console.log ("Tipo de Novedad", tipoNovedad, typeof(tipoNovedad), registro, typeof(registro))
+    console.log (listaActividades)
+
+  
+    if (tipoNovedad ="A")  {
+        //Declaraciones ejecutadas cuando la novedad es Agregar un nuevo registro
+        nuevaListaActividades = listaActividades.concat(registro);
+        console.log ("Nueva ",nuevaListaActividades)
+    }
+    if (tipoNovedad ="B")  {
+        //Declaraciones ejecutadas cuando la novedad es Borrar un registro de la lista
+        listaActividades.forEach(actividad => {
+        if (registro.id !== actividad.id) {
+          nuevalistaActividades = nuevaListaActividades.concat(actividad);
+        }
+      })
+    }
+    if (tipoNovedad ="M")  {
+      //Declaraciones ejecutadas cuando la novedad es Modificar (Agregar Registro Tiempo)
+      listaActividades.forEach(actividad => {
+        if (registro.id === actividad.id) {
+          nuevaListaActividades = nuevalistaActividades.concat(registro);
+        }
+        else {
+          nuevalistaActividades = nuevaListaActividades.concat(actividad);
+        }
+      })
+    }
+  
+    setListaActividades(nuevalistaActividades);
+    
+  
+  }
+
+  const DetalleActividades = listaActividades.map((actividad) => 
+    <Actividad key={actividad.id} actividad={actividad} frecuencia={frecuencia}/>)
+
+
   const onGrabacion = () => {
   // Se envia el conjunto de parametros para agregar un nuevo registro 
   // a la lista de actividades
@@ -181,29 +228,27 @@ function RegistroActividad(props) {
       cantTpo: 0,
       selectTpo: null,
       selectFrecTpo: null,
-      }
+      },
     };
-    var nuevaTablaImpresion = MantenimientoListaActividades(novedad={novedad})
-    setTablaImpresion(nuevaTablaImpresion);
 
-
-
-    manejarCierreModalNuevaActividad();
+  mantenimientoListaActividades(novedad)
+  manejarCierreModalNuevaActividad();
   };
-  const DetalleActividades = tablaImpresion.map((actividad) => 
-   <Actividad key={actividad.id} actividad={actividad} frecuencia={frecuencia}/>)
+  
+
 
   return (
     <div>
       <div className="container-xl">
         <div className="table-responsive">
-          <div className="table-wrapper">
+          <div className="table-w
+          rapper">
             <div className="table-title">
               <div className="row">
                 <div className="col-sm-6">
-                  <h2>
-                    Registro  <b>Actividades</b>
-                  </h2>
+                  <h5>
+                    Registro Actividades
+                  </h5>
                 </div>
                 <div className="col-sm-6">
 

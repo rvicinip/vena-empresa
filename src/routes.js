@@ -15,6 +15,7 @@ import DiccionarioTable from "components/Tables/DiccionarioTable.js"
 import FrecuenciasTable from "components/Tables/FrecuenciasTable.js"
 import InicioModelo2 from "components/Inicio/InicioModelo2.js";
 import InicioReactTable from "components/Inicio/InicioReactTable.js";
+import ListaActividadesTable from "components/Tables/ListaActividadesTable.js"
 
 
 import Cliente from "layouts/Cliente.js"
@@ -41,14 +42,14 @@ var routes = [
     layout: "/cliente",
     name: "Menu Actividades",
     icon: "pi pi-fw pi-home",
-    tablero: true,
+    tablero: false,
     component: Cliente,
   },  
   
   {
     path: "/seleccion-actividades",
     layout: "/cliente",
-    name: "Seleccion Actividades",
+    name: "Registro Actividades",
     icon: "nc-icon nc-bullet-list-67",
     tablero: true,
     component: Inicio,
@@ -57,19 +58,11 @@ var routes = [
   {
     path: "/captura-frecuencias",
     layout: "/cliente",
-    name: "Modelo 2 Bootstrap",
+    name: "Prototipo 2",
     icon: "nc-icon nc-watch-time",
     tablero: true,
     component: InicioModelo2,
   },  
-  {
-    path: "/reactTable",
-    layout: "/cliente",
-    name: "React Table",
-    icon: "nc-icon nc-cloud-upload-94",
-    tablero: true,
-    component: InicioReactTable,
-  },
   {
     path: "/cierre-encuesta",
     layout: "/cliente",
